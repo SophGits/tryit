@@ -22,22 +22,22 @@ function thermometer(goalAmount, progressAmount, animate) {
     percentageAmount =  Math.min( Math.round(progressAmount / goalAmount * 1000) / 10, 100); //make sure we have 1 decimal point
 
     //let's format the numbers and put them back in the DOM
-    $goal.find(".amount").text( goalAmount );
-    $progress.find(".amount").text( progressAmount + " votes");
+    $goal.find(".amount").text(  goalAmount );
+    $progress.find(".amount").text( progressAmount );
 
 
     //let's set the progress indicator
     $progress.find(".amount").hide();
     if (animate !== false) {
         $progress.animate({
-            "height": percentageAmount + "%"
+            "width": percentageAmount + "%"
         }, 1200, function(){
             $(this).find(".amount").fadeIn(500);
         });
     }
     else {
         $progress.css({
-            "height": percentageAmount + "%"
+            "width": percentageAmount + "%"
         });
         $progress.find(".amount").fadeIn(500);
     }
