@@ -67,4 +67,30 @@ window.onload = function(){
   // ... ... insertBefore(newitem, existing item);
   // sprite.parentNode.insertBefore(tcanvas, sprite);
 
+
+
+  // animations
+  var frames =10; // there are 10 images in this sprite
+  var container = document.getElementById("container");
+  var frame_width = parseInt(window.getComputedStyle(container).width)/frames; // width of container should allow only 1 frame to be seen
+
+  //window.getComputedStyle is supported in Chrome, FF, Opera, and IE9+
+  //The width has "px" at the end so parseInt is used to remove that
+  container.style.width = frame_width+"px";
+
+  // change the left of ascii to move it
+  ascii.style.marginLeft = "0";
+
+  setInterval(loop, 150)
+
+  function loop(){
+    var current_margin_left = parseInt(ascii.style.marginLeft);
+    // if the ascii reaches the final frame (9th in this case), margin needs to reset to 0
+    // frame_width *(10-1)* -1 (because we are taking the margin negative)
+    if(current_margin_left == frame_width*(frames-1)*-1)
+      ascii.style.marginLeft ="0";
+    else
+    ascii.style.marginLeft = parseFloat(ascii.style.marginLeft) - frame_width + "px";
+  }
+
 }

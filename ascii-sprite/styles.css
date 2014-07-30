@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  text-align: center;
+}
 
 #ascii{
   font-family: monospace;
@@ -11,4 +14,9 @@
 
 #sprite{
   display: none;
+}
+
+#container{
+  overflow: hidden;
+  display: inline-block;
 }
