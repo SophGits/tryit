@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#ascii{
+  font-family: monospace;
+  font-size: 10px;
+  line-height: 60%;
+}
+
+#sprite{
+  display: none;
+}

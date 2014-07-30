@@ -13,6 +13,9 @@ window.onload = function(){
   tcanvas.width = W;
   tcanvas.height = H;
   var tc = tcanvas.getContext("2d");
+  // painting the canvas white before painting the image to deal with pngs
+  tc.fillStyle = "white";
+  tc.fillRect(0, 0, W, H);
   // drawing the image on the canvas
   tc.drawImage(sprite, 0, 0, W, H);
 
@@ -57,11 +60,11 @@ window.onload = function(){
 
   }
   // repainting the grey image
-  tc.putImageData(pixels, 0, 0);
+  //tc.putImageData(pixels, 0, 0);
 
 
   // injecting the canvas into the DOM
   // ... ... insertBefore(newitem, existing item);
-  sprite.parentNode.insertBefore(tcanvas, sprite);
+  // sprite.parentNode.insertBefore(tcanvas, sprite);
 
 }
