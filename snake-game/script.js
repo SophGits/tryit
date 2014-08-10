@@ -9,11 +9,13 @@ $(document).ready(function(){
   var cw = 10;
   var d;
   var food;
+  var score;
 
   function init(){
     d = "right";
     create_snake();
     create_food();
+    score = 0;
 
     // Move snake using a timer (which will trigger the paint function)
     if(typeof game_loop != "undefined")
@@ -51,6 +53,7 @@ $(document).ready(function(){
     ctx.fillRect(0, 0, w, h);
     ctx.strokeStyle = "black";
     ctx.strokeRect(0, 0, w, h);
+    ctx.font = 'bold 16pt monospace';
 
     // Movement code:
     // Pop the tail cell and place it in front of the head cell
@@ -65,8 +68,9 @@ $(document).ready(function(){
     else if(d == "down") ny++;
 
     // Game Over clauses
-    // If snake hits the wall:
-    if(nx == -1 || nx == w/cw || ny == -1 || ny == h/cw){
+    // If snake hits the wall
+    // or bumps into its own body (check_collision):
+    if(nx == -1 || nx == w/cw || ny == -1 || ny == h/cw || check_collision(nx, ny, snake_array)){
       //restart game
       init();
       return;
@@ -77,6 +81,7 @@ $(document).ready(function(){
     // create a new head instead of moving the tail
     if(nx == food.x && ny == food.y){
       var tail = {x: nx, y: ny};
+      score ++;
       create_food();
     }else{
       var tail = snake_array.pop(); //pops out the last cell
@@ -95,6 +100,9 @@ $(document).ready(function(){
 
     // Paint food
     paint_cell(food.x, food.y);
+    // Paint score
+    var score_text = "Score: " + score;
+    ctx.fillText(score_text, 5, h-5);
 
     // first, draw generic cells
     function paint_cell(x, y){
@@ -103,6 +111,15 @@ $(document).ready(function(){
       ctx.strokeStyle = "white";
       ctx.strokeRect(x*cw, y*cw, cw, cw);
     }
+  }
+
+  function check_collision(x,y,array){
+    //checks if the provided x/y coordinates exist in array of cells or not
+    for(var i=0; i<array.length; i++){
+      if(array[i].x == x && array[i].y == y)
+        return true;
+    }
+    return false;
   }
 
   // Keyboard controls
