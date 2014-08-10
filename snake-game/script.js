@@ -8,12 +8,6 @@ $(document).ready(function(){
   // Save the cell width in a variable for easy control
   var cw = 10;
 
-  // Paiting the canvas
-  ctx.fillStyle = "white";
-  ctx.fillRect(0, 0, w, h);
-  ctx.strokeStyle = "black";
-  ctx.strokeRect(0, 0, w, h);
-
   // Create the snake
   var snake_array; // array of cells to make the snake
   create_snake();
@@ -28,6 +22,11 @@ $(document).ready(function(){
   // Paint the snake
   function paint(){
     // To avoid seeing all old snake body cells colouring up the canvas, we need to repaint it each time:
+    // Paiting the canvas
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 0, w, h);
+    ctx.strokeStyle = "black";
+    ctx.strokeRect(0, 0, w, h);
 
     // Movement code:
     // Pop the tail cell and place it in front of the head cell
