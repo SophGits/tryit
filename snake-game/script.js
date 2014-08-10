@@ -7,20 +7,40 @@ $(document).ready(function(){
 
   // Save cell width in a variable for easy control
   var cw = 10;
-  var d = "right";
+  var d;
+  var food;
+
+  function init(){
+    d = "right";
+    create_snake();
+    create_food();
+
+    // Move snake using a timer (which will trigger the paint function)
+    if(typeof game_loop != "undefined")
+      clearInterval(game_loop);
+    game_loop = setInterval(paint, 60); //every 60ms
+  }
+  init();
 
   // Create snake
   var snake_array; // array of cells to make the snake
 
-
-
-  create_snake();
   function create_snake(){
     var length = 5;
     snake_array= []; // start with an empty array
     for(var i=length-1; i>=0; i--){
       snake_array.push({x:i, y:0});// This creates a horizontal snake, starting from top-left
     }
+  }
+
+  // Food
+  function create_food(){
+    // create a cell with x/y between 0 & 44
+    // because there are 45 positions across the rows and columns
+    food = {
+      x:Math.round(Math.random()*(w-cw)/cw),
+      y:Math.round(Math.random()*(h-cw)/cw)
+    };
   }
 
   // Paint the snake (and canvas)
@@ -48,21 +68,40 @@ $(document).ready(function(){
     // If snake hits the wall:
     if(nx == -1 || nx == w/cw || ny == -1 || ny == h/cw){
       //restart game
+      init();
       return;
     }
 
-    var tail = snake_array.pop(); //pops out the last cell
-    tail.x = nx;
-    tail.y = ny;
+    // Make snake eat food
+    // if head position matches that of food, then
+    // create a new head instead of moving the tail
+    if(nx == food.x && ny == food.y){
+      var tail = {x: nx, y: ny};
+      create_food();
+    }else{
+      var tail = snake_array.pop(); //pops out the last cell
+      tail.x = nx;
+      tail.y = ny;
+    }
+    // snake can now eat food
+
     snake_array.unshift(tail); // adds tail to start of array
 
     for(var i=0; i<snake_array.length; i++){
       var c = snake_array[i];
       // paint 10px-wide cells
+      paint_cell(c.x, c.y);
+    }
+
+    // Paint food
+    paint_cell(food.x, food.y);
+
+    // first, draw generic cells
+    function paint_cell(x, y){
       ctx.fillStyle = "limegreen";
-      ctx.fillRect(c.x*cw, c.y*cw, cw, cw);
+      ctx.fillRect(x*cw, y*cw, cw, cw);
       ctx.strokeStyle = "white";
-      ctx.strokeRect(c.x*cw, c.y*cw, cw, cw);
+      ctx.strokeRect(x*cw, y*cw, cw, cw);
     }
   }
 
@@ -75,9 +114,6 @@ $(document).ready(function(){
     else if(key == "39" && d != "left") d = "right";
     else if(key == "40" && d != "up") d = "down";
   });
-
-  // Move snake using a timer (which will trigger the paint function)
-  game_loop = setInterval(paint, 60); //every 60ms
 
   paint();
 
