@@ -35,18 +35,29 @@ $(document).ready(function(){
   }
 
   //  Comments
-  //  - those starting with a #:
+    //  - those starting with a #:
   c = c.replace(/(#.*?\n)/g, "<span class=\"comment\">$1</span>");
-  // - those starting with '-- '
-  // first, remove spans applied to the '--' as a special character
-  c = c.replace(/<span class=\"sc\">-<\/span><span class=\"\sc\">-<\/span>/g, "--");
+    // - those starting with '-- '
+    // first, remove spans applied to each of the '-' as a special character
+  c = c.replace(/<span class=\"sc\">-<\/span><span class=\"sc\">-<\/span>/g, "--");
   c = c.replace(/(-- .*?\n)/g, "<span class=\"comment\">$1</span>");
 
-  // - those inside /*...*/
-  // filtering out spans attached to /* and */ as special characters
-  c = c.replace(/<span class=\"sc\">\/<\/span><span class=\"sc\">\*<\/span>/g, "*/");
-  // in JS the dot operator cannot match newlines, so use [\s\S] as a hack to select everything
+    // - those inside /*...*/
+    // filtering out spans attached to /* and */ as special characters
+  c = c.replace(/<span class=\"sc\">\/<\/span><span class=\"sc\">\*<\/span>/g, "/*");
+  c = c.replace(/<span class=\"sc\">\*<\/span><span class=\"sc\">\/<\/span>/g, "*/");
+    // in JS the dot operator cannot match newlines, so use [\s\S] as a hack to select everything (space or non-space characters)
   c = c.replace(/(\/\*[\s\S]*?\*\/)/g, "<span class=\"comment\">$1</span>");
 
+
   $("#layer").html(c); // injecting code into <pre></pre>
+
+  //  Keywords inside comments
+  // Create a filter function to remove spans, and use it in .replace() instead of replacement strings
+  function clear_spans(match){
+    match = match.replace(/<span.*?>/g, "");
+    match = match.replace(/<\/span>/g, "");
+    return "<span class=\"comment\">"+match+"</span>";
+  }
+
 })
