@@ -8,3 +8,10 @@ body{
 #highlight{
   display: none;
 }
+
+/* Colours */
+.sc{color: brown;}
+.keyword{color:purple; font-weight: bold;}
+.string{color: darkgreen;}
+.comment{color: green;}
+.function{color: red;}
