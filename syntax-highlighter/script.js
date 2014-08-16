@@ -36,18 +36,19 @@ $(document).ready(function(){
 
   //  Comments
     //  - those starting with a #:
-  c = c.replace(/(#.*?\n)/g, "<span class=\"comment\">$1</span>");
+  c = c.replace(/(#.*?\n)/g, clear_spans);
+
     // - those starting with '-- '
     // first, remove spans applied to each of the '-' as a special character
   c = c.replace(/<span class=\"sc\">-<\/span><span class=\"sc\">-<\/span>/g, "--");
-  c = c.replace(/(-- .*?\n)/g, "<span class=\"comment\">$1</span>");
+  c = c.replace(/(-- .*?\n)/g, clear_spans);
 
     // - those inside /*...*/
     // filtering out spans attached to /* and */ as special characters
   c = c.replace(/<span class=\"sc\">\/<\/span><span class=\"sc\">\*<\/span>/g, "/*");
   c = c.replace(/<span class=\"sc\">\*<\/span><span class=\"sc\">\/<\/span>/g, "*/");
     // in JS the dot operator cannot match newlines, so use [\s\S] as a hack to select everything (space or non-space characters)
-  c = c.replace(/(\/\*[\s\S]*?\*\/)/g, "<span class=\"comment\">$1</span>");
+  c = c.replace(/(\/\*[\s\S]*?\*\/)/g, clear_spans);
 
 
   $("#layer").html(c); // injecting code into <pre></pre>
