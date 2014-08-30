@@ -3,8 +3,8 @@ window.onload = function(){
 
   // Check ingredient against a regex
   function checkIngredients(items){
-    veganMatches =[];
-    nonVeganMatches = [];
+    var veganMatches = [];
+    var nonVeganMatches = [];
 
     $.each(items, function(index, item){
 
@@ -41,11 +41,11 @@ window.onload = function(){
     });
   }
 
-  // On submit, call checkItems(inputs)
+  // On submit, call checkIgresients(inputs)
   $("form").on('submit', function(e){
     e.preventDefault();
 
-    userItems = $('textarea').val();
+    var userItems = $('textarea').val();
     format(userItems);
 
     function format(items){
