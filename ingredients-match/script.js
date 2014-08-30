@@ -20,7 +20,11 @@ window.onload = function(){
           veganMatches.push(match);
         }
         else if (matchMilks != null){
-          var match = matchMilks["input"] || matchMilk["input"];
+          var match = matchMilks["input"];
+          nonVeganMatches.push(match);
+        }
+        else if (matchMilk != null){
+          var match = matchMilk["input"];
           nonVeganMatches.push(match);
         }
 
