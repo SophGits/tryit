@@ -5,15 +5,43 @@ window.onload = function(){
   function checkIngredients(items){
     var veganMatches = [];
     var nonVeganMatches = [];
+    var nonMatches = [];
+
+    var regexVeganMilks = /\s*(coconut|soy|soya)\s*milk\s*/g;
+    var regexMilks = /\s*(whole|semi-skimmed|semi-skim|skimmed|skim)\s*milk/;
+    var regexMilk = /^\s*milk\s*$/g;
+
+    function checkItem(item, regex){
+      var matches = regex.test(item)
+      if(matches){
+        return true;
+      }
+      else{
+        nonMatches.push(item);
+        return false;
+      }
+    }
+
+    var veganMappedItems = items.filter(function(item){
+      return checkItem(item, regexVeganMilks);
+    });
+    var nonVeganMappedItems = nonMatches.filter(function(item){
+      return checkItem(item, regexMilks);
+      nonMatches = [];
+    });
+    // var milkMappedItems = items.filter(function(item){
+    //   return checkItem(item, regexMilk);
+    // });
+    // console.log(veganMappedItems);
+    // console.log(nonVeganMappedItems);
+    // console.log(milkMappedItems);
+    // console.log(nonMatches);
 
     $.each(items, function(index, item){
 
-        // match for coconut milk
-        var matchVeganMilks = /\s*(coconut|soy|soya)\s*milk\s*/g.exec(item)
-        //match for skimmed milk
-        var matchMilks = /\s*(whole|semi-skimmed|semi-skim|skimmed|skim)\s*milk/.exec(item);
-        // match for "milk" on its own
-        var matchMilk = /^\s*milk\s*$/g.exec(item)
+        var matchVeganMilks = regexVeganMilks.exec(item)
+        var matchMilks = regexMilks.exec(item);
+        var matchMilk = regexMilk.exec(item)
 
         if (matchVeganMilks != null){
           var match = matchVeganMilks["input"];
@@ -45,7 +73,7 @@ window.onload = function(){
     });
   }
 
-  // On submit, call checkIgresients(inputs)
+  // On submit, call checkIgredients(inputs)
   $("form").on('submit', function(e){
     e.preventDefault();
 
