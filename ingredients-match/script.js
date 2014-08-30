@@ -11,49 +11,24 @@ window.onload = function(){
     var regexMilks = /\s*(whole|semi-skimmed|semi-skim|skimmed|skim)\s*milk/;
     var regexMilk = /^\s*milk\s*$/g;
 
-    function checkItem(item, regex){
-      var matches = regex.test(item)
-      if(matches){
-        return true;
-      }
-      else{
-        nonMatches.push(item);
-        return false;
-      }
-    }
-
-    var veganMappedItems = items.filter(function(item){
-      return checkItem(item, regexVeganMilks);
-    });
-    var nonVeganMappedItems = nonMatches.filter(function(item){
-      return checkItem(item, regexMilks);
-      nonMatches = [];
-    });
-    // var milkMappedItems = items.filter(function(item){
-    //   return checkItem(item, regexMilk);
-    // });
-    // console.log(veganMappedItems);
-    // console.log(nonVeganMappedItems);
-    // console.log(milkMappedItems);
-    // console.log(nonMatches);
-
     $.each(items, function(index, item){
 
-        var matchVeganMilks = regexVeganMilks.exec(item)
-        var matchMilks = regexMilks.exec(item);
-        var matchMilk = regexMilk.exec(item)
+        var matchVeganMilks = regexVeganMilks.test(item);
+        var matchMilks = regexMilks.test(item);
+        var matchMilk = regexMilk.test(item);
 
-        if (matchVeganMilks != null){
-          var match = matchVeganMilks["input"];
-          veganMatches.push(match);
-        }
-        else if (matchMilks != null){
-          var match = matchMilks["input"];
-          nonVeganMatches.push(match);
-        }
-        else if (matchMilk != null){
-          var match = matchMilk["input"];
-          nonVeganMatches.push(match);
+        switch (true){
+          case matchVeganMilks:
+            veganMatches.push(item);
+            break;
+          case matchMilks:
+            nonVeganMatches.push(item);
+            break;
+          case matchMilk:
+            nonVeganMatches.push(item);
+            break;
+          default:
+            nonMatches.push(item);
         }
 
     });
