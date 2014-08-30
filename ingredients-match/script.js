@@ -32,19 +32,15 @@ window.onload = function(){
         }
 
     });
-    listIngredients(veganMatches);
-    listNonVeganIngredients(nonVeganMatches);
+    showItems(veganMatches, $(".results ol"));
+    showItems(nonVeganMatches, $(".non-vegan-results ol"));
+    showItems(nonMatches, $(".non-match-results ol"));
   }
 
-  // List each ingredient under Results or Non-vegan
-  function listIngredients(items){
+
+  function showItems(items, container){
     $.each(items, function(index, item){
-      $(".results ol").append("<li>" + item + "</li>");
-    });
-  }
-  function listNonVeganIngredients(items){
-    $.each(items, function(index, item){
-      $(".non-vegan-results ol").append("<li>" + item + "</li>");
+      container.append("<li>" + item + "</li>");
     });
   }
 
