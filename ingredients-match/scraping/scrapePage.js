@@ -19,42 +19,43 @@
         allFruitNamesArray.push(allFruitNames[i]['attribs']['id']);
       }
 
+      var resultsObj = [];
+
       for (i in allFruitNamesArray) {
         item = allFruitNamesArray[i];
 
         var resultArray = ($("#" + item, 'li'));
-        itemLink = (resultArray[0]['next']['attribs']['href']);
+        // itemLink = (resultArray[0]['next']['attribs']['href']);
         // need to sort this bit out so it doesn't give up once an entry has no href attr or is undefined
-        if (resultArray.length > 0 && itemLink != false) {
-          veganLink = "https://en.wikipedia.org" + itemLink;
+        if (resultArray.length > 0) {
+          // veganLink = "https://en.wikipedia.org" + itemLink;
           veganResult = "true";
         } else {
           console.log("no-go");
+          veganResult = "false";
         }
-
+        console.log(item);
         console.log(veganResult);
-        console.log(veganLink);
+        // console.log(veganLink);
+        resultsObj.push({
+          item: item,
+          isItVegan: veganResult
+          //, veganLink: veganLink
+        });
 
       };
 
-    // Writing to a file with node fs:
-    // var fs = require('fs');
+    // Writing JSON to a file with node fs:
+    var fs = require('fs');
+    var outputFilename = '../scraping/my.json';
 
-    // var myData = {
-    //   item: item,
-    //   isItVegan: veganResult,
-    //   veganLink: veganLink
-    // }
-
-    // var outputFilename = '../scraping/my.json';
-
-    // fs.writeFile(outputFilename, JSON.stringify(myData, null, 4), function(err) {
-    //     if(err) {
-    //       console.log(err);
-    //     } else {
-    //       console.log("JSON saved to " + outputFilename);
-    //     }
-    // });
+    fs.writeFile(outputFilename, JSON.stringify(resultsObj, null, 4), function(err) {
+      if(err) {
+        console.log(err);
+      } else {
+        console.log("JSON saved to " + outputFilename);
+      }
+    });
 
   });
 
