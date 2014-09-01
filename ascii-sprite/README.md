@@ -1,0 +1,1 @@
+This code is taken from a follow-along tutorial provided by http://thecodeplayer.com/walkthrough/cool-ascii-animation-using-an-image-sprite-canvas-and-javascript

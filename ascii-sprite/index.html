@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>Animating a sprite using ascii art</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- can't serve image using a relative path because canvas thinks there are cross-origin sources and it taints the canvas for some reason...can do it using localhost though -->
+  <img src="http://localhost/tryit/tryit/ascii-sprite/sprite.png" id="sprite" />
+
+  <div id="container">
+    <!-- the <pre> tag preserves spaces and line-breaks - and displays in a fixed-width font -->
+    <pre id="ascii"></pre>
+  </div>
+
+
+</body>
+</html>

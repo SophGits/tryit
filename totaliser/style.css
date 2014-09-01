@@ -1,0 +1,53 @@
+#content {
+    width:200px;
+    margin: 130px auto;
+}
+
+#thermometer {
+   height: 40px;
+    width: 300px;
+    position: relative;
+    background: gray;
+    border:1px solid blue;
+}
+
+#thermometer .track {
+    top: 10px;
+    height: 20px;
+    border: 1px solid orange;
+    position: relative;
+    margin:0 auto;
+    background: white;
+}
+
+#thermometer .progress {
+    height:100%;
+    width:0%;
+    background: green;
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+
+#thermometer .goal {
+    position:absolute;
+    right:0;
+    padding-top: 40px;
+}
+
+#thermometer .amount {
+    display: inline-block;
+    padding:0 5px 0 60px;
+    border-right:1px solid black;
+    font-weight: bold;
+    color:#333;
+}
+
+#thermometer .progress .amount {
+    padding-bottom: 36px;
+    position: absolute;
+    border-top: 1px solid #060;
+    color: red;
+    right:0;
+    bottom: 0;
+}

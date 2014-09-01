@@ -1,0 +1,1 @@
+This code is taken from a follow-along tutorial provided by http://thecodeplayer.com/walkthrough/html5-game-tutorial-make-a-snake-game-using-html5-canvas-jquery

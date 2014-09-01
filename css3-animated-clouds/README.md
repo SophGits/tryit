@@ -1,0 +1,1 @@
+This code is taken from a follow-along tutorial provided by http://thecodeplayer.com/walkthrough/pure-css3-animated-clouds-background

@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  text-align: center;
+}
+
+#ascii{
+  font-family: monospace;
+  font-size: 10px;
+  line-height: 60%;
+}
+
+#sprite{
+  display: none;
+}
+
+#container{
+  overflow: hidden;
+  display: inline-block;
+}
