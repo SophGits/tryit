@@ -1,0 +1,117 @@
+<!-- // this is the 'photo' version -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Freewall testing - Sophie</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+
+  <div id="wall-container">
+    <div id="freewall" class="free-wall" width="100%" height="400px">
+      <div class="cell event">Event</div>
+      <div class="cell event">Event</div>
+      <div class="cell quest">Quest</div>
+      <div class="cell quest">
+        <img src="#" />
+        <h4>Quest</h4>
+        <p>How product innovation for a leading consumer goods company is helpling address water scarcity in Africa.</p>
+        <hr />
+        <h3>Client Quest</h3>
+      </div>
+      <div class="cell standard">Standard</div>
+      <div class="cell standard">Stadard</div>
+      <div class="cell standard">Standard</div>
+      <div class="cell standard">Standard</div>
+    </div>
+  </div>
+
+    <script type="text/javascript">
+      var itemsArray = $('#freewall .cell');
+      var eventArray = $('#freewall .event');
+      var standardArray = $('#freewall .standard');
+      var questArray = $('#freewall .quest');
+
+      var temp = "<div class='{cell}' style='width:{width}px; height: {height}px; border: {border}; color:{colour};'>{contents}</div>";
+
+      var w = 1;
+      var htmlArray = [];
+      var html = "";
+
+      $.each(eventArray, function(i, value){
+        w = 210 + 10 * Math.random() << 0;
+        var contents = value.innerHTML;
+        html = temp
+          .replace(/\{height\}/g, 240)
+          .replace(/\{cell\}/g, 'cell event')
+          .replace(/\{width\}/g, w)
+          .replace("{index}", i + 1)
+          .replace(/\{border\}/g, '2px solid blue')
+          .replace(/\{colour\}/g, 'blue')
+          .replace(/\{contents\}/g, contents);
+          htmlArray.push(html);
+      });
+
+      $.each(standardArray, function(i, value){
+        w = 250 + 20 * Math.random() << 0;
+        var contents = value.innerHTML;
+        html = temp
+        .replace(/\{cell\}/g, 'cell standard')
+        .replace(/\{height\}/g, 240)
+        .replace(/\{width\}/g, w)
+        .replace("{index}", i + 1)
+        .replace(/\{border\}/g, '2px solid green')
+        .replace(/\{colour\}/g, 'green')
+        .replace(/\{contents\}/g, contents);
+        htmlArray.push(html);
+      });
+
+      $.each(questArray, function(i, value){
+        w = 400 + 40 * Math.random() << 0;
+        var contents = value.innerHTML;
+        html = temp
+        .replace(/\{cell\}/g, 'cell quest')
+        .replace(/\{height\}/g, 240)
+        .replace(/\{width\}/g, w)
+        .replace("{index}", i + 1)
+        .replace(/\{border\}/g, '2px solid red')
+        .replace(/\{colour\}/g, 'red')
+        .replace(/\{contents\}/g, contents);
+        htmlArray.push(html);
+      });
+
+
+      function shuffle(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+        return array;
+      }
+
+      shuffle(htmlArray);
+      var html2 = htmlArray.join("");
+
+      $("#freewall").html(html2);
+
+      var wall = new freewall("#freewall");
+      wall.reset({
+        selector: '.cell',
+        animate: false,
+        cellW: 20,
+        cellH: 240,
+        onResize: function() {
+          wall.fitWidth();
+        }
+      });
+      wall.fitWidth();
+      // for scroll bar appear;
+      $(window).trigger("resize");
+    </script>
+  </body>
+</html>
