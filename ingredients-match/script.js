@@ -1,4 +1,4 @@
-var window.Ingredients = {};
+window.Ingredients = {};
 
 window.onload = function(){
   // for scraped data
@@ -31,6 +31,7 @@ function format(items){
 }
 
 function showItems(items, container){
+    container.html('');
   $.each(items, function(index, item){
     container.append("<li>" + item + "</li>");
   });
