@@ -41,7 +41,6 @@ function checkIngredients(items){
   var veganMatches = [];
   var nonVeganMatches = [];
   var nonMatches = [];
-  var jsonArray = [];
 
   // using the /g flag means you keep track of something you've already matched and may not match the same item all the time
   // var regexVeganMilks = /\s*(coconut|soy|soya)\s*milk\s*/g;
@@ -54,7 +53,7 @@ function checkIngredients(items){
     var checkJson = function(item){
     temp = false;
       for(i = 0; i < Ingredients.jsonArray.length; i++){
-        if(jsonArray[i]['item'] == item){
+        if(Ingredients.jsonArray[i] == item){
           temp = true;
           break;
         } else {
