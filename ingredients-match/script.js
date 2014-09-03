@@ -1,4 +1,14 @@
+var window.Ingredients = {};
+
 window.onload = function(){
+  // for scraped data
+  Ingredients.jsonArray = [];
+  $.getJSON( "scraping/my.json", function(data){
+    $.each(data, function(i, datum){
+      Ingredients.jsonArray.push(datum['item']);
+    });
+  });
+
   // On submit, call checkIgredients(inputs)
   $("form").on('submit', function(e){
     e.preventDefault();
@@ -41,16 +51,9 @@ function checkIngredients(items){
 
   $.each(items, function(index, item){
 
-    // for scraped data
-    $.getJSON( "scraping/my.json", function(data){
-      $.each(data, function(i, datum){
-        jsonArray.push(datum['item']);
-      });
-    });
-
     var checkJson = function(item){
     temp = false;
-      for(i = 0; i < jsonArray.length; i++){
+      for(i = 0; i < Ingredients.jsonArray.length; i++){
         if(jsonArray[i]['item'] == item){
           temp = true;
           break;
