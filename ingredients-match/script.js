@@ -31,6 +31,7 @@ function checkIngredients(items){
   var veganMatches = [];
   var nonVeganMatches = [];
   var nonMatches = [];
+  var jsonArray = [];
 
   // using the /g flag means you keep track of something you've already matched and may not match the same item all the time
   // var regexVeganMilks = /\s*(coconut|soy|soya)\s*milk\s*/g;
@@ -40,11 +41,34 @@ function checkIngredients(items){
 
   $.each(items, function(index, item){
 
+    // for scraped data
+    $.getJSON( "scraping/my.json", function(data){
+      $.each(data, function(i, datum){
+        jsonArray.push(datum['item']);
+      });
+    });
 
-  // these must be inside the .each because .test behaves unusually otherwise!
-  var matchVeganMilks = regexVeganMilks.test(item);
-  var matchMilks = regexMilks.test(item);
-  var matchMilk = regexMilk.test(item);
+    temp = false;
+    var checkJson = function(item){
+      for(i = 0; i < jsonArray.length; i++){
+        if(jsonArray[i]['item'] == item){
+          temp = true;
+          // console.log("Yes here, at index " + i + ": " + jsonArray[i]['item'] + "! And var temp = " + temp);
+          break;
+        } else {
+          temp = false;
+          // console.log("Not here, at index " + i + ", which is " + jsonArray[i]['item'] + " And var temp = " + temp);
+        }
+      };
+      // it needs to return true here to work
+    }
+
+    var matchesJson = checkJson(item); // when this is true it works!
+    matchesJson = temp;
+    // these must be inside the .each because .test behaves unusually otherwise!
+    var matchVeganMilks = regexVeganMilks.test(item);
+    var matchMilks = regexMilks.test(item);
+    var matchMilk = regexMilk.test(item);
 
       switch (true){
         case matchVeganMilks:
@@ -56,15 +80,15 @@ function checkIngredients(items){
         case matchMilk:
           nonVeganMatches.push(item);
           break;
+        case matchesJson:
+          veganMatches.push(item);
+          break;
         default:
           nonMatches.push(item);
       }
 
-  });
-  showItems(veganMatches, $(".results ol"));
-  showItems(nonVeganMatches, $(".non-vegan-results ol"));
-  showItems(nonMatches, $(".non-match-results ol"));
+    });
+    showItems(veganMatches, $(".results ol"));
+    showItems(nonVeganMatches, $(".non-vegan-results ol"));
+    showItems(nonMatches, $(".non-match-results ol"));
 }
-
-
-
