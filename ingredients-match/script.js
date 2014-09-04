@@ -3,9 +3,24 @@ window.Ingredients = {};
 window.onload = function(){
   // for scraped data
   Ingredients.jsonArray = [];
-  $.getJSON( "scraping/my.json", function(data){
-    $.each(data, function(i, datum){
-      Ingredients.jsonArray.push(datum['item']);
+  Ingredients.nonVeganJsonArray = [];
+
+  var jsonFilesVegan = ['scraping/my.json'];
+  $.each(jsonFilesVegan, function(i, file){
+    $.getJSON( file, function(data){
+      $.each(data, function(i, datum){
+        Ingredients.jsonArray.push(datum['item']);
+      });
+    });
+  });
+  var jsonFilesNonVegan = ['scraping/my-dairy.json'];
+  $.each(jsonFilesNonVegan, function(i, file){
+    $.getJSON( file, function(data){
+      $.each(data, function(i, datum){
+       // console.log(datum['item'].toLowerCase());
+        var item = datum['item'].toLowerCase();
+        Ingredients.nonVeganJsonArray.push(item);
+      });
     });
   });
 
@@ -47,7 +62,7 @@ function checkIngredients(items){
   // var regexVeganMilks = /\s*(coconut|soy|soya)\s*milk\s*/g;
   var regexVeganMilks = /\s*(coconut|soy|soya)\s*milk\s*/;
   var regexMilks = /\s*(whole|semi-skimmed|semi-skim|skimmed|skim)\s*milk/;
-  var regexMilk = /^\s*milk\s*$/;
+  var regexArrayNonVegan = [/^\s*milk\s*$/, /^\s*lactose\s*$/]
 
   $.each(items, function(index, item){
 
@@ -64,12 +79,30 @@ function checkIngredients(items){
       return temp; // it needs to return true here to work
     }
 
+    var checkNonVeganJson = function(item){
+    temp = false;
+      for(i = 0; i < Ingredients.nonVeganJsonArray.length; i++){
+        if(Ingredients.nonVeganJsonArray[i] == item){
+          temp = true;
+          break;
+        } else {
+          temp = false;
+        }
+      };
+      return temp; // it needs to return true here to work
+    }
+
     var matchesJson = checkJson(item); // when this is true it works!
+    var matchesNonVeganJson = checkNonVeganJson(item);
 
     // these must be inside the .each because .test behaves unusually otherwise!
     var matchVeganMilks = regexVeganMilks.test(item);
     var matchMilks = regexMilks.test(item);
-    var matchMilk = regexMilk.test(item);
+    var matchNonVeganRegex = function(item){
+        return regexArrayNonVegan.some(function(regex){
+          return regex.test(item);
+        });
+      };
 
       switch (true){
         case matchVeganMilks:
@@ -78,11 +111,14 @@ function checkIngredients(items){
         case matchMilks:
           nonVeganMatches.push(item);
           break;
-        case matchMilk:
+        case matchNonVeganRegex(item):
           nonVeganMatches.push(item);
           break;
         case matchesJson:
           veganMatches.push(item);
+          break;
+        case matchesNonVeganJson:
+          nonVeganMatches.push(item);
           break;
         default:
           nonMatches.push(item);
