@@ -60,9 +60,14 @@ function checkIngredients(items){
 
   // using the /g flag means you keep track of something you've already matched and may not match the same item all the time
   // var regexVeganMilks = /\s*(coconut|soy|soya)\s*milk\s*/g;
-  var regexVeganMilks = /\s*(coconut|soy|soya)\s*milk\s*/;
-  var regexMilks = /\s*(whole|semi-skimmed|semi-skim|skimmed|skim)\s*milk/;
-  var regexArrayNonVegan = [/^\s*milk\s*$/, /^\s*lactose\s*$/]
+  var regexPercentage = /\s*(\((100(?:\.0{1,2})? | 0*?\.\d{1,2} | \d{1,2}(?:\.\d{1,2}))\))?\s*/;
+  var regexVeganMilks = new RegExp((/\s*(coconut|soy|soya)\s*milk\s*/).source + regexPercentage.source);
+  var regexMilks = new RegExp((/\s*(whole|semi-skimmed|semi-skim|skimmed|skim)\s*milk/).source + regexPercentage.source);
+  var regexArrayNV = [/^\s*milk\s*$/, /^\s*lactose\s*$/];
+  var regexArrayNonVegan = $.map(regexArrayNV, function (val, i){
+    return new RegExp(val.source + regexPercentage.source);
+  })
+  // var regexMilksWithPercentage = new RegExp(regexMilks.source + regexPercentage.source);
 
   $.each(items, function(index, item){
 
@@ -94,6 +99,7 @@ function checkIngredients(items){
 
     var matchesJson = checkJson(item); // when this is true it works!
     var matchesNonVeganJson = checkNonVeganJson(item);
+    // var matchesCarrots = regexCarrots.test(item);
 
     // these must be inside the .each because .test behaves unusually otherwise!
     var matchVeganMilks = regexVeganMilks.test(item);
@@ -103,6 +109,7 @@ function checkIngredients(items){
           return regex.test(item);
         });
       };
+    // var matchMilksWithPercentage = regexMilksWithPercentage.test(item);
 
       switch (true){
         case matchVeganMilks:
@@ -120,6 +127,10 @@ function checkIngredients(items){
         case matchesNonVeganJson:
           nonVeganMatches.push(item);
           break;
+        // case matchesCarrots:
+        //   veganMatches.push(item);
+        case matchMilks:
+          nonVeganMatches.push(item);
         default:
           nonMatches.push(item);
       }
