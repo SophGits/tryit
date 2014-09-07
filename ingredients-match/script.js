@@ -1,28 +1,28 @@
-window.Ingredients = {};
+window.Ingredients = {
+  // for scraped data
+  jsonArray: [],
+  nonVeganJsonArray: []
+};
 
 window.onload = function(){
-  // for scraped data
-  Ingredients.jsonArray = [];
-  Ingredients.nonVeganJsonArray = [];
+
+  function getIngredients(filename, ingredientsContainer){
+    var request = $.getJSON(filename);
+    request.success(function(data){
+      $.each(data, function(i, datum){
+        if (datum['item']) {
+          ingredientsContainer.push(datum['item'].toLowerCase());
+        }
+      });
+    });
+  }
 
   var jsonFilesVegan = ['scraping/my.json'];
-  $.each(jsonFilesVegan, function(i, file){
-    $.getJSON( file, function(data){
-      $.each(data, function(i, datum){
-        Ingredients.jsonArray.push(datum['item']);
-      });
-    });
-  });
   var jsonFilesNonVegan = ['scraping/my-dairy.json'];
-  $.each(jsonFilesNonVegan, function(i, file){
-    $.getJSON( file, function(data){
-      $.each(data, function(i, datum){
-       // console.log(datum['item'].toLowerCase());
-        var item = datum['item'].toLowerCase();
-        Ingredients.nonVeganJsonArray.push(item);
-      });
-    });
-  });
+
+  getIngredients(jsonFilesVegan, Ingredients.jsonArray);
+  getIngredients(jsonFilesNonVegan, Ingredients.nonVeganJsonArray);
+
 
   // On submit, call checkIgredients(inputs)
   $("form").on('submit', function(e){
