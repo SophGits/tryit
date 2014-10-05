@@ -1,12 +1,12 @@
-window.Ingredients = {
+// Constructor function for ingredients object ("class")
+window.Ingredients = function(){
   // for scraped data
-  jsonArray: [],
-  nonVeganJsonArray: []
+  this.jsonArray = [];
+  this.nonVeganJsonArray = [];
 };
 
-window.onload = function(){
-
-  function getIngredients(filename, ingredientsContainer){
+Ingredients.prototype = {
+  get: function(filename, ingredientsContainer){
     var request = $.getJSON(filename);
     request.success(function(data){
       $.each(data, function(i, datum){
@@ -16,12 +16,17 @@ window.onload = function(){
       });
     });
   }
+}
+
+var ingredients = new Ingredients();
+
+window.onload = function(){
 
   var jsonFilesVegan = ['scraping/my.json'];
   var jsonFilesNonVegan = ['scraping/my-dairy.json'];
 
-  getIngredients(jsonFilesVegan, Ingredients.jsonArray);
-  getIngredients(jsonFilesNonVegan, Ingredients.nonVeganJsonArray);
+  ingredients.get(jsonFilesVegan, ingredients.jsonArray);
+  ingredients.get(jsonFilesNonVegan, ingredients.nonVeganJsonArray);
 
 
   // On submit, call checkIgredients(inputs)
@@ -45,12 +50,7 @@ function format(items){
   checkIngredients(itemsArray);
 }
 
-function showItems(items, container){
-    container.html('');
-  $.each(items, function(index, item){
-    container.append("<li>" + item + "</li>");
-  });
-}
+
 
 // Check ingredient against a regex
 function checkIngredients(items){
@@ -73,21 +73,21 @@ function checkIngredients(items){
 
     var checkJson = function(item){
     temp = false;
-      for(i = 0; i < Ingredients.jsonArray.length; i++){
-        if(Ingredients.jsonArray[i] == item){
+      for(i = 0; i < ingredients.jsonArray.length; i++){
+        if(ingredients.jsonArray[i] == item){
           temp = true;
           break;
         } else {
           temp = false;
         }
       };
-      return temp; // it needs to return true here to work
+      return temp; // it needs to return true here to work. (It does now work)
     }
 
     var checkNonVeganJson = function(item){
     temp = false;
-      for(i = 0; i < Ingredients.nonVeganJsonArray.length; i++){
-        if(Ingredients.nonVeganJsonArray[i] == item){
+      for(i = 0; i < ingredients.nonVeganJsonArray.length; i++){
+        if(ingredients.nonVeganJsonArray[i] == item){
           temp = true;
           break;
         } else {
@@ -99,7 +99,6 @@ function checkIngredients(items){
 
     var matchesJson = checkJson(item); // when this is true it works!
     var matchesNonVeganJson = checkNonVeganJson(item);
-    // var matchesCarrots = regexCarrots.test(item);
 
     // these must be inside the .each because .test behaves unusually otherwise!
     var matchVeganMilks = regexVeganMilks.test(item);
@@ -127,8 +126,6 @@ function checkIngredients(items){
         case matchesNonVeganJson:
           nonVeganMatches.push(item);
           break;
-        // case matchesCarrots:
-        //   veganMatches.push(item);
         case matchMilks:
           nonVeganMatches.push(item);
         default:
