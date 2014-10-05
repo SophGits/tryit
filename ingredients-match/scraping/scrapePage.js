@@ -1,9 +1,7 @@
   var request = require('request');
   var cheerio = require('cheerio');
 
-
   var item = "";
-
   var veganResult = "";
   var veganLink = "";
   var allFruitNamesArray = [];
