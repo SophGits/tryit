@@ -20,14 +20,14 @@ Ingredients.prototype = {
 
 var ingredients = new Ingredients();
 
+// This window.onload disrupts the one in Jasmine's boot.js, meaning if you try to show SpecRunner it won't show anything.
 window.onload = function(){
 
-  var jsonFilesVegan = ['scraping/my.json'];
-  var jsonFilesNonVegan = ['scraping/my-dairy.json'];
+  var jsonFilesVegan = ['/scraping/my.json'];
+  var jsonFilesNonVegan = ['/scraping/my-dairy.json'];
 
   ingredients.get(jsonFilesVegan, ingredients.jsonArray);
   ingredients.get(jsonFilesNonVegan, ingredients.nonVeganJsonArray);
-
 
   // On submit, call checkIgredients(inputs)
   $("form").on('submit', function(e){
