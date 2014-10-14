@@ -1,6 +1,6 @@
 
-##### Remembering how to cycle through and access properties in objects within an objects
-###### NB: item just points to the name - you have to go through itemObject.item.colour (or itemObject[item]['colour']) to get to the colour.
+#### Remembering how to cycle through and access properties in objects within an objects
+##### NB: item just points to the name - you have to go through itemObject.item.colour (or itemObject[item]['colour']) to get to the colour.
 
 ```
 var sweetsObject = {
@@ -16,17 +16,12 @@ function listsweets(itemObject){
   }
 }
 listsweets(sweetsObject);
-// >>> outputs:
-// Sherbert lemons are yellow.
-// Bonbons are pink.
-// Wethers Originals are brown.
-// Pushpops are red.
 ```
 
 
 ---
 
-##### Putting another property on that object and loop over everything that has a colour (so that it doesn't include "listsweets" in the loop as well:
+#### Putting another property on that object and loop over everything that has a colour (so that it doesn't include "listsweets" in the loop as well:
 
 ```
 sweetsObject.listsweets = function(){
