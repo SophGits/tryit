@@ -7,9 +7,9 @@ var sweetsObject = {
   Pushpop: {bitterness: 0, colour: "red"}
 }
 
-function listsweets(itemArray){
-  for (var item in itemArray){
-    console.log(item + "s are " + itemArray[item]['colour'] + ".");
+function listsweets(itemObject){
+  for (var item in itemObject){
+    console.log(item + "s are " + itemObject[item]['colour'] + ".");
   }
 }
 listsweets(sweetsObject);
@@ -19,3 +19,5 @@ listsweets(sweetsObject);
 // Bonbons are pink.
 // Wethers Originals are brown.
 // Pushpops are red.
+
+// NB: item just points to the name - you have to go through itemObject.item.colour (or itemObject[item]['colour']) to get to the colour.
