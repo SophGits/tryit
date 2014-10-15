@@ -21,8 +21,8 @@ basket.valueOf();
 ```
 ```javascript
 basket.constructor.prototype
-```
 > Apple {valueOf: function}
+```
 or can use:  ```basket.__proto__;```
 > use this to go "up" one in the object hierarchy (basket > Apple > Object > null)
 
