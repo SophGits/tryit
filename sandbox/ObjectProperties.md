@@ -85,4 +85,9 @@ types.push(["Golden Delicious", "yellow", 1]);
 basket.valueOf();
 > 6
 ```
+>basket.constructor.prototype
+>> Apple {valueOf: function}
+> or can use:  basket.__proto__;
+> use this to go "up" one in the object hierarchy (basket > Apple > Object > null)
+
 
