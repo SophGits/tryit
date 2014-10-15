@@ -2,7 +2,7 @@
 ### Cycle through & access properties of objects within an object
 ##### NB: item just points to the name - you have to go through itemObject.item.colour (or itemObject[item]['colour']) to get to the colour.
 
-```
+```javascript
 var sweetsObject = {
   "Sherbert lemon": {bitterness: 5, colour: "yellow"},
   Bonbon: {bitterness: 1, colour: "pink"},
@@ -23,7 +23,7 @@ listsweets(sweetsObject);
 ### Create a function as a new object property & loop over everything not including itself:
 ##### (ie all the sweets, but not the new function)
 
-```
+```javascript
 sweetsObject.listsweets = function(){
   for(var property in this){
     if(this[property]["colour"]){
