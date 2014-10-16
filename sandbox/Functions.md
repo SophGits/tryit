@@ -62,3 +62,41 @@ myObject.double = function(){
 myObject.double();
 console.log(myObject.value);
 ```
+
+###### 3. The constructor invocation pattern
+Using `new` to create an object which inherits from its prototype member makes `this` bind to the  new object and also changes the bahaviour of the `return` statement.
+
+```javascript
+var Banana = function(string){
+  this.status = string;
+};
+Banana.prototype.get_status = function(){
+  return this.status
+};
+var myBanana = new Banana✝('sad');
+console.log(myBanana.get_status()); //sad
+```
+If a constructor is called without using the `new` prefix, bad things will happen and you won't see a compile-time or runtime warning.
+
+Use of this style of constructor functions is not recommended.
+
+> ✝ Capital letter for a constructor is very important. The onstructor is the one prefixed with `new`.
+
+###### 4. The Apply invocation pattern
+Functions can have methods (as you know)
+
+The `apply` method lets us build an array of arguments✝ used to invoke a function. It also lets us choose the value of `this`✡.
+
+```javascript
+var array = [3, 4];
+var sum = add.apply(null✡, array✝); // sum is 7
+
+var brian = {
+  status: "fine";
+}
+
+// brian does not inherit from Banana, but we can still invoke Banana's method "get_status" on brian:
+
+var status = Banana.prototype.get_status.apply(brian);
+// brian's status is "fine".
+```
