@@ -100,3 +100,54 @@ var brian = {
 var status = Banana.prototype.get_status.apply(brian);
 // brian's status is "fine".
 ```
+
+##### Arguments
+An `arguments` array-like object is available to all functions when theyre invoked. They can include excess arguments that weren't assigned to parameters, eg:
+
+```javascript
+var add = function(){
+  var i, sum=0;
+  for(i=0; i < arguments.length; i++){
+    sum += arguments[i];
+  }
+  return sum;
+};
+console.log(add(4,8,15,16,23,42)); // 108
+```
+
+##### Return
+A function always returns a value. If a return value is not specified, `undefined` is returned.
+
+If you invoke a function using `new` and the return value is not an object, then `this` (the new object) is returned instead.
+
+##### Exceptions
+Use `throw` for handling something unexpected:
+
+```javascript
+var add = function (a,b){
+  if(typeof a !== "number" || typeof b !== "number"){
+    throw{
+      name: "TypeError",
+      message: "add needs numbers"
+    };
+  }
+  return a + b;
+}
+```
+The `throw` statement's object should, at least, have a name identifying the type of exception and a descriptive message. You can also add other properties.
+
+Here's a `try` block. If an exception is thrown within that, control does to the `catch` clause:
+
+var try_it = function(){
+  try{
+    add("seven");
+  }
+  catch(e){
+    console.log(e.name + ": " + e.message);
+  }
+}
+try_it();
+
+The `catch` clause will type out the error name and message you created in `throw`, above.
+
+`try` has one `catch` block for catching all exceptions. If you need to know the type of exception in order to do different things with it, then get your exception handler to inspect the `name` to determine the type of exception.
