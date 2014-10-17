@@ -17,6 +17,9 @@ typeof thing.constructor // 'function'
 ```
 to deal with this you can either make your program reject function values, or, use the hasOwnProperty method (which does not look at the prototype chain).
 
+
+> You can use it to "make empty" or "erase" cells in an array, with: `array[i] = undefined;`
+
 ---
 
 #### Enumerators
