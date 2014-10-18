@@ -29,3 +29,51 @@ or can use:  ```basket.__proto__;```
 ---
 
 #### [Useful blogpost by Alex Sexton](https://alexsexton.com/blog/2013/04/understanding-javascript-inheritance/) (see final code block)
+
+
+### Augmenting types
+##### Alter Function.prototype so you don't have to type the name of the prototype property:
+
+```javascript
+Function.prototype.method = function(name, func){
+  this.prototype[name] = func;
+  return this;
+};
+```
+>eg:
+> Function.prototype.cat = function(){
+>   console.log("meow");
+>  };
+> Using the above, instead of Function.prototype.cat(), you only have to write Function.cat();
+
+##### JS has no integer type
+But you can add an integer method to Function.prototype:
+
+```javascript
+Number.method('integer', function(){
+  return Math[this < 0 ? "ceil" : "floor"](this);
+});
+console.log((-10/3).integer()); // -3
+```
+
+##### JS has no method to remove spaces from the ends of strings.
+Try this:
+```javascript
+String.method('trim', function(){
+  return this.replace(/^\s+|\s+$/g, '')
+});
+console.log('"' + " carrots ".trim() + '"');
+```
+
+##### Check if a method exists
+The prototypes of the basic types are public structures, so be careful when mixing libraries. You _could_ only add a method if it's missing, using something like:
+
+```javascript
+Function.prototype.method = function(name, func){
+  if(!this.prototype[name]){
+    this.prototype[name] = func;
+    return this;
+  }
+};
+```
+
