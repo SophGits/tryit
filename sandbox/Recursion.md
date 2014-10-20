@@ -50,21 +50,21 @@ Here's my (unfinished) attempt at the tree representation of this problem:
 (Instead of including the log() bit, I've just said on the node what happens)
 
 .
-+-- hanoi(3, sad) //  move 3 from s to d
-|   +-- hanoi(2, sda) // move 2 from s to a
-|   |   +-- hanoi(1, sad) // move 1 from s to d
-|   |   |   +-- hanoi(0, sda) //end
-|   |   |   +-- hanoi(0, asd) //end
-|   |   +-- hanoi(1, asd) // move 1 from a to d
-|   |   |   +-- hanoi(0) //end
-|   |   |   +-- hanoi(0) //end
-|   +-- hanoi(2, asd) // move 2 from a to d
-|   |   +-- hanoi(1, ...)
-|   |   |   +-- hanoi(0) //end
-|   |   |   +-- hanoi(0) //end
-|   |   +-- hanoi(1, ...)
-|   |   |   +-- hanoi(0) //end
-|   |   |   +-- hanoi(0) //end
++-- hanoi(3 s-d)
+|   +-- hanoi(2 s-a)
+|   |   +-- hanoi(1 s-d)
+|   |   |   +-- hanoi(0 end)
+|   |   |   +-- hanoi(0 end)
+|   |   +-- hanoi(1 a-d)
+|   |   |   +-- hanoi(0 end)
+|   |   |   +-- hanoi(0 end)
+|   +-- hanoi(2 a-d)
+|   |   +-- hanoi(1  )
+|   |   |   +-- hanoi(0 end)
+|   |   |   +-- hanoi(0 end)
+|   |   +-- hanoi(1  )
+|   |   |   +-- hanoi(0 end)
+|   |   |   +-- hanoi(0 end)
 
 
 ##### Fibonacci
@@ -72,7 +72,7 @@ This might be a bit simpler.
 Here is the sequence:
 
 1 | 2 | 3| 4 | 5 | 6 | 7 | 8 | 9 | n
---- | --- | --- | --- | --- | --- | --- | --- | --- |
+--- | --- | --- | --- | --- | --- | --- | --- | ---
 0 | 1 | 1 | 2 | 3 | 5 | 8 | 13 | 21 | n-1 + n-2
 
 
