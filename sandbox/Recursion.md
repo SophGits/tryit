@@ -6,11 +6,11 @@
 
 ###### Solution:
 ```javascript
-var hanoi = function hanoi(disc, s, a, d){
+var hanoi = function hanoi(disc, s, a, d){ //move disc n from source to dest
   if(disc > 0){
-    hanoi(disc-1, s, d, a);
+    hanoi(disc-1, s, d, a); // move n-1 discs from source to aux, leaving the bigger one (above on dest)
     console.log("Move disc " + disc + " from " + s + " to " + d);
-    hanoi(disc-1, a, s, d);
+    hanoi(disc-1, a, s, d); // move n-1 discs from aux to dest, so they all sit on top of biggest disc, n
   }
 };
 hanoi(3, "Source", "Aux", "Destination");
@@ -46,40 +46,70 @@ Outer | S | A | D
 Inner1 | S | D | A
 Inner2 | A | S | D
 
-Here's what the tree of options looks like:
+Here's my (unfinished) attempt at the tree representation of this problem:
+(Instead of including the log() bit, I've just said on the node what happens)
+
 .
-+-- hanoi(3, asd)
-|   +-- hanoi(2, sda)
-|   |   +-- hanoi(1, sad)
-|   |   |   +-- hanoi(0) // end
-|   |   |   +-- log(1, ...)
-|   |   |   +-- hanoi(0) // end
-|   |   +-- log(2, ...)
++-- hanoi(3, sad) //  move 3 from s to d
+|   +-- hanoi(2, sda) // move 2 from s to a
+|   |   +-- hanoi(1, sad) // move 1 from s to d
+|   |   |   +-- hanoi(0, sda) //end
+|   |   |   +-- hanoi(0, asd) //end
+|   |   +-- hanoi(1, asd) // move 1 from a to d
+|   |   |   +-- hanoi(0) //end
+|   |   |   +-- hanoi(0) //end
+|   +-- hanoi(2, asd) // move 2 from a to d
 |   |   +-- hanoi(1, ...)
-|   |   |   +-- hanoi(0) // end
-|   |   |   +-- log(1, ...)
-|   |   |   +-- hanoi(0) // end
-|   +-- log(3, asd)
-|   +-- hanoi(2, ...)
+|   |   |   +-- hanoi(0) //end
+|   |   |   +-- hanoi(0) //end
 |   |   +-- hanoi(1, ...)
-|   |   |   +-- hanoi(0) // end
-|   |   |   +-- log(1, ...)
-|   |   |   +-- hanoi(0) // end
-|   |   +-- log(2, ...)
-|   |   +-- hanoi(1, ...)
-|   |   |   +-- hanoi(0) // end
-|   |   |   +-- log(1, ...)
-|   |   |   +-- hanoi(0) // end
+|   |   |   +-- hanoi(0) //end
+|   |   |   +-- hanoi(0) //end
 
-An attempt at trying to trace where src, aux & dst go:
 
-hanoi(3);
-dic > 0? yes
-hanoi(3) -1; (aux is now dest)
-dic > 0? yes
-hanoi(2) -1 (aux back to aux)
-dic > 0? yes
-hanoi(1) -1 (aux is now dest)
-dic > 0? no
-console.log(hanoi(2))
-hanoi(2) -1 (src is now aux (the original dest) )
+##### Fibonacci
+This might be a bit simpler.
+Here is the sequence:
+
+1 | 2 | 3| 4 | 5 | 6 | 7 | 8 | 9 | n
+--- | --- | --- | --- | --- | --- | --- | --- | --- |
+0 | 1 | 1 | 2 | 3 | 5 | 8 | 13 | 21 | n-1 + n-2
+
+
+Here's the function:
+```javascript
+function fibonacci(n) {
+   if (n < 2){
+     return 1;
+   }else{
+     return fibonacci(n-1) + fibonacci(n-2);
+   }
+}
+
+fibonacci(2); // 2
+fibonacci(3); // 3
+fibonacci(4); // 5
+
+fibonacci(6); // 13
+fibonacci(7); // 21
+fibonacci(8); // 34
+```
+
+###### Explanation:
+As you can see there's an if(n < 2). So, the base case is n == 1 (or 0).
+
+* Call fibonacci(8)
+* It's bigger than 2, so skip the if() and you get "return 8-1 + 8-2"
+* As 8-2 is 6, you can imagine this is going to keep happening until you get below 2 and can access that if()
+* So, when you get to 1 you can see 1 is returned
+* Every time you call the function you're going working your way up to n from the base case, like so:
+
+* fibonacci(8) = 34. Here is what happens:
+n=1: (where n-1 = 0 and n-2 is still <2 and therefore 1)
+n=2: (where n-1 = 1 and n-2 = 0)  1 (returned)
+n=3: (where n-1 = 2 and n-2 = 1)  1 + 1 = 2
+n=4: (where n-1 = 3 and n-2 = 2)  2 + 1 = 3
+n=5: (where n-1 = 4 and n-2 = 3)  3 + 2 = 5
+n=6: (where n-1 = 5 and n-2 = 4)  8 + 5 = 13
+n=7: (where n-1 = 6 and n-2 = 5)  13 + 8 = 21
+n=8: (where n-1 = 7 and n-2 = 6)  21 + 13 = 34
