@@ -71,9 +71,9 @@ Here's my (unfinished) attempt at the tree representation of this problem:
 This might be a bit simpler.
 Here is the sequence:
 
-1 | 2 | 3| 4 | 5 | 6 | 7 | 8 | 9 | n
---- | --- | --- | --- | --- | --- | --- | --- | ---
-0 | 1 | 1 | 2 | 3 | 5 | 8 | 13 | 21 | n-1 + n-2
+1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9  | n
+--- | --- | --- | --- | --- | --- | --- | --- | ---| --
+0   | 1   | 1   | 2   | 3   | 5   | 8   | 13  | 21 | n-1 + n-2
 
 
 Here's the function:
