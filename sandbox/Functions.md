@@ -151,3 +151,45 @@ try_it();
 The `catch` clause will type out the error name and message you created in `throw`, above.
 
 `try` has one `catch` block for catching all exceptions. If you need to know the type of exception in order to do different things with it, then get your exception handler to inspect the `name` to determine the type of exception.
+
+
+
+
+##### Execution time
+Builds in memory as soon as the program loads
+```javascript
+function add (a, b){
+  return a + b;
+}
+```
+
+A function expression. It only loads when you get to that line of the program:
+```javascript
+var sum = function add(a, b){
+  return a + b;
+}; // this one needs a semicolon at the end because it's an assignment statement (is assigned to the variable `sum`)
+```
+
+We tend to do the function expression above as an anonymous function (ie "add" as a name is not required)
+
+Useful when you want to do something like:
+```javascript
+var lang = "eng";
+function(lang){
+  if(lang = "eng"){
+    var sayBye = function(){
+      console.log("I'm off, see you soon.")
+    };
+  else if(lang = "italian"){
+    var sayBye = function(){
+      console.log("Ciao bello.")
+    };
+  }
+}
+
+function leavingNow(message){
+  message();
+}
+
+leavingNow(sayBye);
+```
