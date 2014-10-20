@@ -105,11 +105,19 @@ As you can see there's an if(n < 2). So, the base case is n == 1 (or 0).
 * Every time you call the function you're going working your way up to n from the base case, like so:
 
 fibonacci(8) = 34. Here is what happens:
+
 n=1: (where n-1 = 0 and n-2 is still <2 and therefore 1)
+
 n=2: (where n-1 = 1 and n-2 = 0)  1 (returned)
+
 n=3: (where n-1 = 2 and n-2 = 1)  1 + 1 = 2
+
 n=4: (where n-1 = 3 and n-2 = 2)  2 + 1 = 3
+
 n=5: (where n-1 = 4 and n-2 = 3)  3 + 2 = 5
+
 n=6: (where n-1 = 5 and n-2 = 4)  8 + 5 = 13
+
 n=7: (where n-1 = 6 and n-2 = 5)  13 + 8 = 21
+
 n=8: (where n-1 = 7 and n-2 = 6)  21 + 13 = 34
