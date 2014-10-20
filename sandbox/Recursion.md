@@ -1,5 +1,5 @@
 ### Recursion
-##### Towers of Hanoi
+#### Towers of Hanoi
 * 3 posts: Source(s), Destination(d) and Auxillery(a)
 * A set of discs of varying diameters (in the below example, three)
 * Aim is to move the stack of discs from the Source post (where they are piled widest on the bottom to smallest on the top) one by one to another post, never placing a larger disc on a smaller disc.
@@ -49,6 +49,7 @@ Inner2 | A | S | D
 Here's my (unfinished) attempt at the tree representation of this problem:
 (Instead of including the log() bit, I've just said on the node what happens)
 
+```
 .
 +-- hanoi(3 s-d)
 |   +-- hanoi(2 s-a)
@@ -65,9 +66,10 @@ Here's my (unfinished) attempt at the tree representation of this problem:
 |   |   +-- hanoi(1  )
 |   |   |   +-- hanoi(0 end)
 |   |   |   +-- hanoi(0 end)
+```
+---
 
-
-##### Fibonacci
+#### Fibonacci
 This might be a bit simpler.
 Here is the sequence:
 
@@ -118,6 +120,6 @@ n=5: (where n-1 = 4 and n-2 = 3)  3 + 2 = 5
 
 n=6: (where n-1 = 5 and n-2 = 4)  8 + 5 = 13
 
-n=7: (where n-1 = 6 and n-2 = 5)  13 + 8 = 21
+n=7: (where n-1 = 6 and n-2 = 5)  13 + 8 = 21 (using the answers from n=6 and n=5 that we built up to)
 
 n=8: (where n-1 = 7 and n-2 = 6)  21 + 13 = 34
