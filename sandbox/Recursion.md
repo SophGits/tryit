@@ -104,7 +104,7 @@ As you can see there's an if(n < 2). So, the base case is n == 1 (or 0).
 * So, when you get to 1 you can see 1 is returned
 * Every time you call the function you're going working your way up to n from the base case, like so:
 
-* fibonacci(8) = 34. Here is what happens:
+fibonacci(8) = 34. Here is what happens:
 n=1: (where n-1 = 0 and n-2 is still <2 and therefore 1)
 n=2: (where n-1 = 1 and n-2 = 0)  1 (returned)
 n=3: (where n-1 = 2 and n-2 = 1)  1 + 1 = 2
