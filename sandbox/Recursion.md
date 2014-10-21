@@ -37,36 +37,45 @@ Move disc 1 from Source to Destination
 * "Move disc 2..." is logged and we progress to line 3 of the if() statement.
 * Of the output above, the third line is the invocation of the third hanoi() - which is disc 2 -1.
 
-Here's what happens when each of the hanoi()s occurs, relative to the original order of Source, Auxillery, Destination:
+Here's what happens, working from the base case up:
+
+> If we think of the console.log bit as a function (I've called it "move()") it's easier to get your head round:
 
 
-Outer/ inner1/ inner2| Source | Auxillery | Destination
---- | --- | --- | ---
-Outer | S | A | D
-Inner1 | S | D | A
-Inner2 | A | S | D
+######1 disc
+hanoi(1, s, a, d) = move(1, s, d) // move from source to destination (only 2 args here, whereas hanoi has 3)
 
-Here's my (unfinished) attempt at the tree representation of this problem:
-(Instead of including the log() bit, I've just said on the node what happens)
+######2 discs
+Because we know what the hanoi() of one disc is, we can apply it to the sequence of events that would happen for 2:
 
-```
-.
-+-- hanoi(3 s-d)
-|   +-- hanoi(2 s-a)
-|   |   +-- hanoi(1 s-d)
-|   |   |   +-- hanoi(0 end)
-|   |   |   +-- hanoi(0 end)
-|   |   +-- hanoi(1 a-d)
-|   |   |   +-- hanoi(0 end)
-|   |   |   +-- hanoi(0 end)
-|   +-- hanoi(2 a-d)
-|   |   +-- hanoi(1  )
-|   |   |   +-- hanoi(0 end)
-|   |   |   +-- hanoi(0 end)
-|   |   +-- hanoi(1  )
-|   |   |   +-- hanoi(0 end)
-|   |   |   +-- hanoi(0 end)
-```
+hanoi(2, s, a, d) =
+
+* move (1, s, a) // because auxillery and destination switch from sad to sda (2nd hanoi)
+* move (2, s, d) // middle "move" corresponds directly
+* move (1, a, d)
+
+######3 discs
+Here it is written out as in the original:
+
+hanoi(3, s, a, d) =
+
+* hanoi(2, s, d, a)
+* move (3, s, d)
+* hanoi(2, a, s, d)
+
+And using what we learned from hanoi(2) we can convert that to the moves:
+
+* move (1, s, d)
+* move (2, s, a)
+* move (1, d, a)
+
+* move (3, s, d) // the middle one corresponds directly
+
+* move (1, a, s)
+* move (2, a, d)
+* move (1, s, d)
+
+
 ---
 
 #### Fibonacci
