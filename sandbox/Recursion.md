@@ -1,5 +1,5 @@
 ### Recursion
-##### Towers of Hanoi
+#### Towers of Hanoi
 * 3 posts: Source(s), Destination(d) and Auxillery(a)
 * A set of discs of varying diameters (in the below example, three)
 * Aim is to move the stack of discs from the Source post (where they are piled widest on the bottom to smallest on the top) one by one to another post, never placing a larger disc on a smaller disc.
@@ -37,43 +37,61 @@ Move disc 1 from Source to Destination
 * "Move disc 2..." is logged and we progress to line 3 of the if() statement.
 * Of the output above, the third line is the invocation of the third hanoi() - which is disc 2 -1.
 
-Here's what happens when each of the hanoi()s occurs, relative to the original order of Source, Auxillery, Destination:
+Here's what happens, working from the base case up:
+
+> If we think of the console.log bit as a function (I've called it "move()") it's easier to get your head round:
+> Original:
+  hanoi(disc, s, a, d){
+    if(disc > 0){
+      hanoi(disc-1, s, d, a)
+      move(disc, s, d)
+      hanoi(disc-1, a, s, d)
+    }
+  }
+
+######1 disc
+hanoi(1, s, a, d) = move(1, s, d) // move from source to destination (only 2 args here, whereas hanoi has 3)
+
+######2 discs
+Because we know what the hanoi() of one disc is, we can apply it to the sequence of events that would happen for 2:
+
+hanoi(2, s, a, d) =
+
+* move (1, s, a) // because auxillery and destination switch from sad to sda (1st inner hanoi - I have copied order from the original)
+* move (2, s, d) // middle "move"
+* move (1, a, d) // again a -> d copies the original (a, s, d) order
+
+######3 discs
+Here it is written out as in the original:
+
+hanoi(3, s, a, d) =
+
+* hanoi(2, s, d, a) // have written hanoi(2, s, d, a) here instead of move(2, s, a) like we did above to show the steps
+* move (3, s, d)
+* hanoi(2, a, s, d)
+
+And using what we learned from hanoi(2) we can convert that to the moves:
+
+* move (1, s, d) // s -> d instead of s -> a as we've passed through the a/d swap again
+* move (2, s, a)
+* move (1, d, a) // from a -> d to d -> a
+
+* move (3, s, d) // the middle one corresponds directly
+
+* move (1, a, s)
+* move (2, a, d)
+* move (1, s, d)
 
 
-Outer/ inner1/ inner2| Source | Auxillery | Destination
---- | --- | --- | ---
-Outer | S | A | D
-Inner1 | S | D | A
-Inner2 | A | S | D
+---
 
-Here's my (unfinished) attempt at the tree representation of this problem:
-(Instead of including the log() bit, I've just said on the node what happens)
-
-.
-+-- hanoi(3, sad) //  move 3 from s to d
-|   +-- hanoi(2, sda) // move 2 from s to a
-|   |   +-- hanoi(1, sad) // move 1 from s to d
-|   |   |   +-- hanoi(0, sda) //end
-|   |   |   +-- hanoi(0, asd) //end
-|   |   +-- hanoi(1, asd) // move 1 from a to d
-|   |   |   +-- hanoi(0) //end
-|   |   |   +-- hanoi(0) //end
-|   +-- hanoi(2, asd) // move 2 from a to d
-|   |   +-- hanoi(1, ...)
-|   |   |   +-- hanoi(0) //end
-|   |   |   +-- hanoi(0) //end
-|   |   +-- hanoi(1, ...)
-|   |   |   +-- hanoi(0) //end
-|   |   |   +-- hanoi(0) //end
-
-
-##### Fibonacci
+#### Fibonacci
 This might be a bit simpler.
 Here is the sequence:
 
-1 | 2 | 3| 4 | 5 | 6 | 7 | 8 | 9 | n
---- | --- | --- | --- | --- | --- | --- | --- | --- |
-0 | 1 | 1 | 2 | 3 | 5 | 8 | 13 | 21 | n-1 + n-2
+|nth position: | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9  | n   |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | ---| --- |
+| Fibonacci num: | 0   | 1   | 1   | 2   | 3   | 5   | 8   | 13  | 21 | n-1 + n-2 |
 
 
 Here's the function:
@@ -104,12 +122,20 @@ As you can see there's an if(n < 2). So, the base case is n == 1 (or 0).
 * So, when you get to 1 you can see 1 is returned
 * Every time you call the function you're going working your way up to n from the base case, like so:
 
-* fibonacci(8) = 34. Here is what happens:
+fibonacci(8) = 34. Here is what happens:
+
 n=1: (where n-1 = 0 and n-2 is still <2 and therefore 1)
+
 n=2: (where n-1 = 1 and n-2 = 0)  1 (returned)
+
 n=3: (where n-1 = 2 and n-2 = 1)  1 + 1 = 2
+
 n=4: (where n-1 = 3 and n-2 = 2)  2 + 1 = 3
+
 n=5: (where n-1 = 4 and n-2 = 3)  3 + 2 = 5
+
 n=6: (where n-1 = 5 and n-2 = 4)  8 + 5 = 13
-n=7: (where n-1 = 6 and n-2 = 5)  13 + 8 = 21
+
+n=7: (where n-1 = 6 and n-2 = 5)  13 + 8 = 21 (using the answers from n=6 and n=5 that we built up to)
+
 n=8: (where n-1 = 7 and n-2 = 6)  21 + 13 = 34
