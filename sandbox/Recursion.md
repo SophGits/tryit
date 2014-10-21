@@ -40,7 +40,14 @@ Move disc 1 from Source to Destination
 Here's what happens, working from the base case up:
 
 > If we think of the console.log bit as a function (I've called it "move()") it's easier to get your head round:
-
+> Original:
+  hanoi(disc, s, a, d){
+    if(disc > 0){
+      hanoi(disc-1, s, d, a)
+      move(disc, s, d)
+      hanoi(disc-1, a, s, d)
+    }
+  }
 
 ######1 disc
 hanoi(1, s, a, d) = move(1, s, d) // move from source to destination (only 2 args here, whereas hanoi has 3)
@@ -50,24 +57,24 @@ Because we know what the hanoi() of one disc is, we can apply it to the sequence
 
 hanoi(2, s, a, d) =
 
-* move (1, s, a) // because auxillery and destination switch from sad to sda (2nd hanoi)
-* move (2, s, d) // middle "move" corresponds directly
-* move (1, a, d)
+* move (1, s, a) // because auxillery and destination switch from sad to sda (1st inner hanoi - I have copied order from the original)
+* move (2, s, d) // middle "move"
+* move (1, a, d) // again a -> d copies the original (a, s, d) order
 
 ######3 discs
 Here it is written out as in the original:
 
 hanoi(3, s, a, d) =
 
-* hanoi(2, s, d, a)
+* hanoi(2, s, d, a) // have written hanoi(2, s, d, a) here instead of move(2, s, a) like we did above to show the steps
 * move (3, s, d)
 * hanoi(2, a, s, d)
 
 And using what we learned from hanoi(2) we can convert that to the moves:
 
-* move (1, s, d)
+* move (1, s, d) // s -> d instead of s -> a as we've passed through the a/d swap again
 * move (2, s, a)
-* move (1, d, a)
+* move (1, d, a) // from a -> d to d -> a
 
 * move (3, s, d) // the middle one corresponds directly
 
