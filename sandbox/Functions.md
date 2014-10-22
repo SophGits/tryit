@@ -193,3 +193,25 @@ function leavingNow(message){
 
 leavingNow(sayBye);
 ```
+
+
+
+
+##### Map
+
+Map examples:
+
+```javascript
+
+var namesArray = [  ["Joe", "Bloggs"],
+                    ["Jo", "Blogs"],
+                    ["Christine", "Sings"],
+                    ["Dan", "&Dan"]  ];
+
+var modifiedNames = namesArray.map(function(item){
+    return item[0] + " " + item[1];
+  }
+);
+
+```
+> modifiedNames is now: ["Joe Bloggs", "Jo Blogs", "Christine Sings", "Dan &Dan"]
