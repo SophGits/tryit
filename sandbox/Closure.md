@@ -30,26 +30,26 @@
   <tbody>
     <tr>
       <td>
-        function mystery ( input ){  <br/>
-         &nbsp;&nbsp;var secret = 4;  <br/>
+        <b>function</b> mystery ( input ){  <br/>
+         &nbsp;&nbsp;<b>var</b> secret = 4;  <br/>
          &nbsp;&nbsp;input+=2;  <br/>
-         &nbsp;&nbsp;function mystery2 ( multiplier ) {   <br/>
+         &nbsp;&nbsp;<b>function</b> mystery2 ( multiplier ) {   <br/>
             &nbsp;&nbsp;&nbsp;&nbsp;multiplier *= input;  <br/>
             &nbsp;&nbsp;&nbsp;&nbsp;return secret * multiplier;  <br/>
           &nbsp;&nbsp;}  <br/>
-          &nbsp;&nbsp;return mystery2;  <br/>
+          &nbsp;&nbsp;<b>return</b> mystery2;  <br/>
         }  <br/>
-        function mystery3 ( param ){  <br/>
-          &nbsp;&nbsp;function mystery4 ( bonus ){  <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;return param(6) + bonus;  <br/>
+        <b>function</b> mystery3 ( param ){  <br/>
+          &nbsp;&nbsp;<b>function</b> mystery4 ( bonus ){  <br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<b>return</b> param(6) + bonus;  <br/>
           &nbsp;&nbsp;}  <br/>
-         &nbsp;&nbsp; return mystery4;  <br/>
+         &nbsp;&nbsp; <b>return</b> mystery4;  <br/>
         }
         <br/>
         <br/>
-        var hidden = mystery(3);<br/>
-        var jumble = mystery3(hidden);<br/>
-        var result = jumble(2);<br/>
+        <b>var</b> hidden = mystery(3);<br/>
+        <b>var</b> jumble = mystery3(hidden);<br/>
+        <b>var</b> result = jumble(2);<br/>
       </td>
       <td>
        result = jumble(2)<br />
@@ -66,22 +66,22 @@ So, here we input the values:
 
 ```javascript
 function mystery ( input = 3 ){
-  var secret = 4;
+  <b>var</b> secret = 4;
   input+=2;   // input = 3 + 2 = 5
-  function mystery2 ( multiplier = 6 ) {  // param(6) -> multiplier = 6
+  <b>function</b> mystery2 ( multiplier = 6 ) {  // param(6) -> multiplier = 6
     multiplier *= input;  // multiplier = 6 * 5 = 30
-    return secret * multiplier;  // 4 * 30 = 120 = param(6)
+    <b>return</b> secret * multiplier;  // 4 * 30 = 120 = param(6)
   }
-  return mystery2;
+  <b>return</b> mystery2;
 }
 ```
 Then,
 
 ```javascript
-function mystery3 ( param ){
-  function mystery4 ( bonus = 2 ){
-    return param(6) + bonus;    // 120 + 2 = 74
+<b>function</b> mystery3 ( param ){
+  <b>function</b> mystery4 ( bonus = 2 ){
+    <b>return</b> param(6) + bonus;    // 120 + 2 = 74
   }
-  return mystery4;
+  <b>return</b> mystery4;
 }
 ```
