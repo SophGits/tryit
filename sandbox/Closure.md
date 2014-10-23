@@ -16,7 +16,7 @@ function mystery ( input ){
   return mystery2;
 }
 ```
-result == hidden(2) == 40;
+result is same as hidden(2), which is 40;
 
 <table>
   <tbody>
@@ -25,7 +25,7 @@ result == hidden(2) == 40;
       <th align="center">col2</th>
       <th align="right">col3</th>
     </tr>
-    <tr>
+    <tr vertical-align="bottom">
       <td>
         <p>function mystery( input ){<br/>
         &nbsp;&nbsp;&nbsp;var secret = 5;<br/>
