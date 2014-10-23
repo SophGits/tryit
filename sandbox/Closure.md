@@ -70,7 +70,7 @@ function mystery ( input = 3 ){
   input+=2; // 3 + 2 = 5
   function mystery2 ( multiplier = 6 ) { //
     multiplier *= input;  // multiplier = 6 * 5 = 30
-    return secret * multiplier;  // 4 * 30 = 120
+    return secret * multiplier;  // 4 * 30 = 120  (apparently this is param(6) rather than just param)
   }
   return mystery2;
 }
@@ -78,7 +78,7 @@ function mystery ( input = 3 ){
 Then,
 
 ```javascript
-function mystery3 ( param ){ // mystery3( mystery(3) )(2) = mystery3(120)(2)
+function mystery3 ( param ){
   function mystery4 ( bonus = 2 ){
     return param(6) + bonus;    // 120 + 2 = 122
   }
