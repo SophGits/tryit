@@ -27,16 +27,14 @@ result is same as hidden(2), which is 40;
     </tr>
     <tr style="vertical-align:top;">
       <td>
-        ```
-        function mystery( input ){<br/>
-        &nbsp;&nbsp;&nbsp;var secret = 5;<br/>
-        &nbsp;&nbsp;&nbsp;function mystery2 ( multiplier ) {<br/>
+        <b>function</b> mystery( input ){<br/>
+        &nbsp;&nbsp;&nbsp;<b>var</b> secret = 5;<br/>
+        &nbsp;&nbsp;&nbsp;<b>function</b> mystery2 ( multiplier ) {<br/>
         &nbsp;&nbsp;&nbsp;&nbsp;multiplier *= input;<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;return secret * multiplier;<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;<b>return</b> secret * multiplier;<br/>
         &nbsp;&nbsp;&nbsp;}<br/>
-        &nbsp;&nbsp;&nbsp;return mystery2;<br/>
+        &nbsp;&nbsp;&nbsp;<b>return </b>mystery2;<br/>
         }
-        ```
       </td>
       <td>multiplier is 2 <br/>input is 4 </td>
       <td>row 1 col 3</td>
