@@ -2,22 +2,6 @@
 
 ##### Example 1 (from http://javascript-roadtrip-part3.codeschool.com/levels/2/challenges/3)
 
-
-```javascript
-var hidden = mystery(4);
-var result  = hidden(2);
-
-function mystery ( input ){
-  var secret = 5;
-  function mystery2 ( multiplier ) {
-    multiplier *= input;
-    return secret * multiplier;
-  }
-  return mystery2;
-}
-```
-result is same as hidden(2), which is 40;
-
 <table style="font-family:Consolas, 'Liberation Mono'">
   <tbody>
     <tr style="vertical-align:top;">
@@ -33,7 +17,9 @@ result is same as hidden(2), which is 40;
         <br/>
         <b>var hidden = mystery(4);<br/>var result  = hidden(2);</b>
       </td>
-      <td>multiplier is 2 <br/>input is 4 </td>
+      <td>multiplier is 2 <br/>input is 4 <br />
+      result is same as hidden(2), which is 40;
+      </td>
     </tr>
   </tbody>
 </table>
