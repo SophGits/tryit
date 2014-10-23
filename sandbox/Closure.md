@@ -85,3 +85,5 @@ function mystery3 ( param ){
   return mystery4;
 }
 ```
+
+> result is 122
