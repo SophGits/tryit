@@ -57,3 +57,21 @@ This way we can get back the properties we wanted without worrying about what mi
 #### Global variables
 Create one for your app and put everything in there,
 eg `MYAPP.thing = {name: "Bob", colour: "blue"};`
+
+
+#### ===
+When:
+a = 40
+
+b = 40
+
+a == 40
+true
+
+b == 40
+true
+
+a == b == 40
+false
+
+> a == b is "true", whereas 40 is 40. It's left-associative.
