@@ -25,7 +25,7 @@ result is same as hidden(2), which is 40;
       <th align="center">col2</th>
       <th align="right">col3</th>
     </tr>
-    <tr vertical-align="bottom">
+    <tr>
       <td>
         <p>function mystery( input ){<br/>
         &nbsp;&nbsp;&nbsp;var secret = 5;<br/>
@@ -36,8 +36,8 @@ result is same as hidden(2), which is 40;
         &nbsp;&nbsp;&nbsp;return mystery2;<br/>
         }</p>
       </td>
-      <td>multiplier is 2 <br/>input is 4 </td>
-      <td>row 1 col 3</td>
+      <td vertical-align="top">multiplier is 2 <br/>input is 4 </td>
+      <td vertical-align="top">row 1 col 3</td>
     </tr>
     <tr>
       <td>row 2 col 1</td>
