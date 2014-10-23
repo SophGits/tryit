@@ -4,16 +4,16 @@
 
 
 ```javascript
-var hidden = mystery(4);
+var hidden = mystery(4);<br/>
 var result  = hidden(2);
-
-function mystery ( input ){
-  var secret = 5;
-  function mystery2 ( multiplier ) {
-    multiplier *= input;
-    return secret * multiplier;
-  }
-  return mystery2;
+<br/><br/>
+function mystery ( input ){<br/>
+  var secret = 5;<br/>
+  function mystery2 ( multiplier ) {<br/>
+    multiplier *= input;<br/>
+    return secret * multiplier;<br/>
+  }<br/>
+  return mystery2;<br/>
 }
 ```
 result == hidden(2) == 40;
