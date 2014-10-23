@@ -18,7 +18,7 @@ function mystery ( input ){
 ```
 result is same as hidden(2), which is 40;
 
-<table>
+<table style="font-family:Consolas, 'Liberation Mono'">
   <tbody>
     <tr>
       <th align="center">col1</th>
