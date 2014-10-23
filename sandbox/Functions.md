@@ -215,3 +215,9 @@ var modifiedNames = namesArray.map(function(item){
 
 ```
 > modifiedNames is now: ["Joe Bloggs", "Jo Blogs", "Christine Sings", "Dan &Dan"]
+
+##### Shift
+
+`var array = ["a", "b", "c", "d"];`
+`var firstItem = array.shift();`
+`firstItem` is now "a"
