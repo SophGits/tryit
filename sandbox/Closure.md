@@ -20,10 +20,6 @@ result is same as hidden(2), which is 40;
 
 <table style="font-family:Consolas, 'Liberation Mono'">
   <tbody>
-    <tr>
-      <th align="center">var hidden = mystery(4);<br/>var result  = hidden(2);</th>
-      <th align="center"></th>
-    </tr>
     <tr style="vertical-align:top;">
       <td>
         <b>function</b> mystery( input ){<br/>
@@ -33,7 +29,9 @@ result is same as hidden(2), which is 40;
         &nbsp;&nbsp;&nbsp;&nbsp;<b>return</b> secret * multiplier;<br/>
         &nbsp;&nbsp;&nbsp;}<br/>
         &nbsp;&nbsp;&nbsp;<b>return </b>mystery2;<br/>
-        }
+        }<br/>
+        <br/>
+        <b>var hidden = mystery(4);<br/>var result  = hidden(2);</b>
       </td>
       <td>multiplier is 2 <br/>input is 4 </td>
     </tr>
