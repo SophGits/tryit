@@ -28,12 +28,12 @@ result == hidden(2) == 40;
     <tr>
       <td>
         <p>function mystery( input ){<br/>
-          var secret = 5;<br/>
-          function mystery2 ( multiplier ) {<br/>
-            multiplier *= input;<br/>
-            return secret * multiplier;<br/>
-          }<br/>
-          return mystery2;<br/>
+        &nbsp;var secret = 5;<br/>
+        &nbsp;function mystery2 ( multiplier ) {<br/>
+        &nbsp;&nbsp;multiplier *= input;<br/>
+        &nbsp;&nbsp;return secret * multiplier;<br/>
+        &nbsp;}<br/>
+        &nbsp;return mystery2;<br/>
         }</p>
       </td>
       <td>multiplier is 2 <br/>input is 4 </td>
