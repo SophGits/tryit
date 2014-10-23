@@ -27,17 +27,19 @@ result is same as hidden(2), which is 40;
     </tr>
     <tr style="vertical-align:top;">
       <td>
-        <p>function mystery( input ){<br/>
+        ```
+        function mystery( input ){<br/>
         &nbsp;&nbsp;&nbsp;var secret = 5;<br/>
         &nbsp;&nbsp;&nbsp;function mystery2 ( multiplier ) {<br/>
         &nbsp;&nbsp;&nbsp;&nbsp;multiplier *= input;<br/>
         &nbsp;&nbsp;&nbsp;&nbsp;return secret * multiplier;<br/>
         &nbsp;&nbsp;&nbsp;}<br/>
         &nbsp;&nbsp;&nbsp;return mystery2;<br/>
-        }</p>
+        }
+        ```
       </td>
       <td>multiplier is 2 <br/>input is 4 </td>
-      <td style="vertical-align:top;">row 1 col 3</td>
+      <td>row 1 col 3</td>
     </tr>
     <tr>
       <td>row 2 col 1</td>
