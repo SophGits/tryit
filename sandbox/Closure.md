@@ -66,22 +66,22 @@ So, here we input the values:
 
 ```javascript
 function mystery ( input = 3 ){
-  <b>var</b> secret = 4;
+  var secret = 4;
   input+=2;   // input = 3 + 2 = 5
-  <b>function</b> mystery2 ( multiplier = 6 ) {  // param(6) -> multiplier = 6
+  function mystery2 ( multiplier = 6 ) {  // param(6) -> multiplier = 6
     multiplier *= input;  // multiplier = 6 * 5 = 30
-    <b>return</b> secret * multiplier;  // 4 * 30 = 120 = param(6)
+    return secret * multiplier;  // 4 * 30 = 120 = param(6)
   }
-  <b>return</b> mystery2;
+  return mystery2;
 }
 ```
 Then,
 
 ```javascript
-<b>function</b> mystery3 ( param ){
-  <b>function</b> mystery4 ( bonus = 2 ){
-    <b>return</b> param(6) + bonus;    // 120 + 2 = 74
+function mystery3 ( param ){
+  function mystery4 ( bonus = 2 ){
+    return param(6) + bonus;    // 120 + 2 = 74
   }
-  <b>return</b> mystery4;
+  return mystery4;
 }
 ```
