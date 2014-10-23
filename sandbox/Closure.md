@@ -36,8 +36,8 @@ result is same as hidden(2), which is 40;
         &nbsp;&nbsp;&nbsp;return mystery2;<br/>
         }</p>
       </td>
-      <td style="vertical-align: top">multiplier is 2 <br/>input is 4 </td>
-      <td style="vertical-align: top">row 1 col 3</td>
+      <td style="vertical-align:top;">multiplier is 2 <br/>input is 4 </td>
+      <td style="vertical-align:top;">row 1 col 3</td>
     </tr>
     <tr>
       <td>row 2 col 1</td>
