@@ -106,7 +106,7 @@ Return an object
 
 ###### NB: This does not yet work:
 ```javascript
-var person = {name: "Bob", age: "50", address: ['1 Main Street', 'London', 'EC1V 4PS']}
+<!-- var person = {name: "Bob", age: "50", address: ['1 Main Street', 'London', 'EC1V 4PS']}
 
 Object.keys(person).reduce(function(ret, val, i){
   if(val.length > 1){
@@ -117,7 +117,7 @@ Object.keys(person).reduce(function(ret, val, i){
   ret.push(stringAddress)
 }
 return ret;
-}, []);
+}, []); -->
 
 ```
 
