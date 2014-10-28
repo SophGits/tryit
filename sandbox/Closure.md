@@ -1,5 +1,7 @@
 ### Closure
 
+Re scope, their inner functions get access to the parameters and variables they're defined within - with the exception of `this` and `arguments`.
+
 ##### Example 1 (from http://javascript-roadtrip-part3.codeschool.com/levels/2/challenges/3)
 
 <table style="font-family:Consolas, 'Liberation Mono'">
@@ -88,11 +90,15 @@ function mystery3 ( param ){
 
 > result is 122
 
+---
+
 ### A note on scope (from Crockford)
 Most languages with C syntax have block scope, but JS doesn't. It has function scope - ie parameters and variables defined in a function arent't visible outside of it. In modern languages it is recommended that variables be declared as late as possible, at the first point of use - but because JavaScipt lacks block scope you should declare all variables used in a function at the top of a function body.
 
-##### Loops within closure
+---
 
+##### Loops within closure
+#### Bad loop example
 ```javascript
 var fruits = ['banana', 'apple', 'orange'];
 var numberFruits = function(fruits){
@@ -113,7 +119,7 @@ Now click on anything created and you'll only ever get 3 console logged, on the 
 
 The above is meant to give each fruit a number, i, but instead the handler functions are bound to the variable i, nt the value of i at the time the function was made.
 
-
+#### Better loop example
 A better verison is:
 (NB: run it after the above)
 
@@ -131,5 +137,62 @@ var numberFruits2 = function(){
   }
 }
 ```
-
 Now you can see that the alert gives the actual index of each clicked dom element.
+
+---
+
+##### Initialising an instance
+Instead of initialising myObject with an object literal, do it by calling a function which returns one:
+
+```javascript
+var myObject = (function(){
+  var value = 0;✝
+
+  return{
+    increment: function(inc){
+      value += typeof inc === 'number' ? inc : 1;
+    },
+    getValue: function(){
+      return value;
+    }
+  };
+}());
+```
+✝. This value variable is always available to the `increment` and `getValue` methods, but the function's scope keeps it hidden from the rest of the programme.
+> myObject >> Object {increment: function, getValue: function}
+
+We are assigning to myObject the result of invoking a function. The function returns an object containing two methods, which continue to enjoy access to the `value` variable.
+
+#### Quo Eg 1 of 2
+```javascript
+var Quo = function(string)✡{
+  this.status = string;
+}
+✝Quo.prototype.get_status = function(){
+  return this.status;
+};
+✝✝var myQuo = new Quo("confused");
+console.log(myQuo.get_status()); //confused
+```
+✡. Create a constructor function called Quo. It makes an object with a `status` property.
+✝. Give all instances of Quo a public method called `get_status`.
+✝✝. Make an instance of Quo.
+
+
+#### Quo Eg 2 of 2
+```javascript
+✡var quo = function(status){
+  return{
+    get_status: function(){
+      return status;
+    }
+  };
+};
+✝var myQuo = quo("amazed");
+console.log(myQuo.get_status()); //amazed
+```
+✡. Create a maker function called quo. It makes an object with a `get_status` method and a private status property.
+✝. Make an instance of quo.
+
+This quo function is designed to be used without the `new` prefix, so the name isn't capitalised. Calling `quo` returns a new object containing a `get_status` method.
+A reference to that object is stored in myQuo. The `get_status` method still has privileged access to quo's `status` property even though `quo` has already returned.
