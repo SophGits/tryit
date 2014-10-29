@@ -92,13 +92,13 @@ function mystery3 ( param ){
 
 ---
 
-### A note on scope (from Crockford)
+##### A note on scope (from Crockford)
 Most languages with C syntax have block scope, but JS doesn't. It has function scope - ie parameters and variables defined in a function arent't visible outside of it. In modern languages it is recommended that variables be declared as late as possible, at the first point of use - but because JavaScipt lacks block scope you should declare all variables used in a function at the top of a function body.
 
 ---
 
 ##### Loops within closure
-#### Bad loop example
+###### Bad loop example
 ```javascript
 var fruits = ['banana', 'apple', 'orange'];
 var numberFruits = function(fruits){
@@ -119,7 +119,7 @@ Now click on anything created and you'll only ever get 3 console logged, on the 
 
 The above is meant to give each fruit a number, i, but instead the handler functions are bound to the variable i, nt the value of i at the time the function was made.
 
-#### Better loop example
+###### Better loop example
 A better verison is:
 (NB: run it after the above)
 
@@ -138,6 +138,48 @@ var numberFruits2 = function(){
 }
 ```
 Now you can see that the alert gives the actual index of each clicked dom element.
+
+---
+
+###### Another loop example
+Wrong:
+
+```javascript
+var sharkList = ["Bob", "Maisy", "Fred", "Bill",
+ "Norma", "Sharif", "Muhammed", "Jean"]
+```
+```javascript
+function assignNumber( shark, sharkList ){
+  var numberAssignment;
+  for(var i = 0; i < sharkList.length; i++){
+    if(shark == sharkList[i]){
+      numberAssignment = function(){
+        console.log("Hey, " + shark + " - You are number " + i +".");
+      };
+    }
+  }
+  return numberAssignment;
+}
+```
+```javascript
+assignNumber("Maisy", sharkList)();
+```
+The intention is for each shark to get a number correlating with their position in the array. But here, they all get assigned the final number. As you can see if you try with Maisy, she gets 8. Same with Bob.
+
+
+To clear it up you just get rid of numberAssignment:
+
+```javascript
+function assignNumber( shark, sharkList ){
+  for(var i = 1; i < sharkList.length; i++){
+    if(shark == sharkList[i]){
+      return function(){
+        console.log("Hey, " + shark + " - You are number " + i +".");
+      };
+    }
+  }
+}
+```
 
 ---
 
@@ -196,3 +238,64 @@ console.log(myQuo.get_status()); //amazed
 
 This quo function is designed to be used without the `new` prefix, so the name isn't capitalised. Calling `quo` returns a new object containing a `get_status` method.
 A reference to that object is stored in myQuo. The `get_status` method still has privileged access to quo's `status` property even though `quo` has already returned.
+
+---
+
+##### Incrementing
+```javascript
+function warningMaker( obstacle ){
+  var count = 0;
+  return function ( number, location ) {
+  count +=1;
+    console.log("Beware! There have been " + obstacle + " sightings in the Cove today!\n" + number + " " + obstacle + "(s) spotted at the " + location + "!\nThis is Alert #" + count + " today for " + obstacle + " danger."
+    );
+  };
+}
+
+var icebergAlert = warningMaker("iceberg");
+icebergAlert(7, "Charlton");
+```
+See how this keeps track of the number of times an alert has been called. The internal count +=1 goes up even though the scope is bound to that inner function. Keep calling icebergAlert(number, location) and see.
+
+###### Incrementing II (same thing, but with an array as well)
+
+```javascript
+function warningMaker( obstacle ){
+  var count = 0;
+  var zones = [];
+  return function ( number, location ) {
+    count++;
+    zones.push(location);
+    var list = "";
+    for(var i = 0; i < zones.length; i++){
+        list = list + "\n" + zones[i];
+    }
+    console.log("There have been " +
+    obstacle + " sightings in the Cove today!\n" + number + " " + obstacle + "(s) spotted at the " + location + "!\n" + "This is Alert #" + count +
+    " today for " + obstacle + " danger.\n" + "Current danger zones are:" +
+    list
+   );
+  };
+}
+var sharkAlert = warningMaker("shark");
+sharkAlert(5, "Greenwich");
+sharkAlert(5, "Woolwich");
+```
+> Prints:
+> sharkAlert(5, "Greenwich");
+> sharkAlert(5, "Woolwich");
+>
+> There have been shark sightings in the Cove today!
+5 shark(s) spotted at the Greenwich!
+This is Alert #1 today for shark danger.
+Current danger zones are:
+Greenwich
+>
+>There have been shark sightings in the Cove today!
+5 shark(s) spotted at the Woolwich!
+This is Alert #2 today for shark danger.
+Current danger zones are:
+Greenwich
+Woolwich
+
+---
