@@ -114,7 +114,7 @@ var numberFruits = function(fruits){
 };
 numberFruits(fruits);
 ```
-NB: Do it in the console of Modernizr.com because the DOM element "cite" is nice and obvious.
+NB: Do it in the console of Modernizr.com because the DOM element "cite" is nice and obvious.<br />
 Now click on anything created and you'll only ever get 3 console logged, on the third item.
 
 The above is meant to give each fruit a number, i, but instead the handler functions are bound to the variable i, nt the value of i at the time the function was made.
@@ -174,8 +174,8 @@ var Quo = function(string)✡{
 ✝✝var myQuo = new Quo("confused");
 console.log(myQuo.get_status()); //confused
 ```
-✡. Create a constructor function called Quo. It makes an object with a `status` property.
-✝. Give all instances of Quo a public method called `get_status`.
+✡. Create a constructor function called Quo. It makes an object with a `status` property.<br />
+✝. Give all instances of Quo a public method called `get_status`.<br />
 ✝✝. Make an instance of Quo.
 
 
@@ -191,8 +191,8 @@ console.log(myQuo.get_status()); //confused
 ✝var myQuo = quo("amazed");
 console.log(myQuo.get_status()); //amazed
 ```
-✡. Create a maker function called quo. It makes an object with a `get_status` method and a private status property.
-✝. Make an instance of quo.
+✡. Create a maker function called quo. It makes an object with a `get_status` method and a private status property.<br />
+✝. Make an instance of quo.<br />
 
 This quo function is designed to be used without the `new` prefix, so the name isn't capitalised. Calling `quo` returns a new object containing a `get_status` method.
 A reference to that object is stored in myQuo. The `get_status` method still has privileged access to quo's `status` property even though `quo` has already returned.
