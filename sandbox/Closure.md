@@ -117,7 +117,7 @@ numberFruits(fruits);
 NB: Do it in the console of Modernizr.com because the DOM element "cite" is nice and obvious.<br />
 Now click on anything created and you'll only ever get 3 console logged, on the third item.
 
-The above is meant to give each fruit a number, i, but instead the handler functions are bound to the variable i, nt the value of i at the time the function was made.
+The above is meant to give each fruit a number, `i`, but instead the handler functions are bound to the variable `i`, not the value of `i` at the time the function was made.
 
 ###### Better loop example
 A better verison is:
@@ -179,6 +179,76 @@ function assignNumber( shark, sharkList ){
     }
   }
 }
+```
+
+---
+
+###### At the point of closure
+
+Closures bind values at the very last moment, so be careful of return times and variable states.
+
+```javascript
+var listOfPeople = ["Bonnie", "Angel", "Clara", "Dean", "Matthew"];
+```
+```javascript
+function assignNumber(name, people){
+  var numberAssignment;
+  for (var i=0; i < people.length; i++){
+    if(people[i] == name){
+      numberAssignment = function(){
+        console.log("Hey, " + name + " your number is: " + i + ".");
+      };
+    }
+  }
+  return numberAssignment;
+}
+```
+```javascript
+var giveNumber = assignNumber("Clara", listOfPeople);
+giveNumber();
+```
+> Clara will get 6...as will Bonnie, Dean, and everyone else.
+
+The function's actual `return` is the true "moment of closure", when the environment and all necessary variables are packaged up. <br />
+So i is returned in the `return numberAssignment`, where it's already at 5 (the for loop has cycled and stopped by then).<br />
+
+1. We could do this:
+
+```javascript
+function assignNumber(name, people){
+  for (var i=0; i < people.length; i++){
+    if(people[i] == name){
+      return function(){
+        console.log("Hey, " + name + " your number is: " + i + ".");
+      };
+    }
+  };
+}
+```
+Get rid of the numberAssigment altogether and return a function expression straight away (as soon as the person is found) and lock `i` into place so it is not allowed to progress.
+
+2. We could also do this:
+
+```javascript
+function makeNumberAssigner(people){
+  return function(name){
+    for (var i=0; i < people.length; i++){
+      if(people[i] == name){
+        console.log("Hey, " + name + " your number is: " + i + ".");
+      }
+    };
+  }
+}
+```
+We only pass the array to the function, because name is getting passed to the function expression inside.
+
+NB the `people` array is getting passed inside the function expression, binding it to the closure in whatever form it was in when it got passed into `makeNumberAssigner`.
+
+In the above, the loop is inside the returned function and `i` will come straight from that local scope. The only closed variable from the external scope is the `people` array, which never changes anyway.
+
+```javascript
+var getNumberFor = makeNumberAssigner(people);
+getNumberFor("Dean");
 ```
 
 ---
