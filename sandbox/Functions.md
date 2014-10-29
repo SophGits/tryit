@@ -18,8 +18,8 @@ Four patterns:
 They differ in how _this_ is initialised.
 
 ###### 1. The method invocation pattern
-✝. When a function is stored as a property of an object, it's called a method.
-✡. When a method is involved, _this_ is bound to that object
+✝. When a function is stored as a property of an object, it's called a method.<br />
+✡. When a method is involved, _this_ is bound to that object<br />
 ☚. if the invocation expression contains `something.something` or `something["something"]` it is invoked as a method.
 
 ```javascript
@@ -290,6 +290,21 @@ you get this error message:
 >"Your queue is getting shorter, but your loop is also checking that decreasing length on each cycle. It needs to run for as many cycles as there WERE functions initially, NOT for as many cycles as there currently ARE in any given cycle.""
 
 That’s why you need that var length = queue.length - because shift() shortens it every cycle.
+
+
+##### Puzzle part III
+>“What is obtained when the result of passing 9 into function 4 is then passed into the function whose array index matches the result of passing 3 into function 2?”
+
+```javascript
+var puzzleArray = [
+  function ( a ) { return 8*a - 10; },
+  function ( a ) { return (a-3) * (a-3) * (a-3); },
+  function ( a ) { return a * a + 4; },
+  function ( a ) { return a % 5; }
+];
+
+alert( puzzleArray[ puzzleArray[1](3) ]( puzzleArray[3](9) ) );
+```
 
 ---
 
