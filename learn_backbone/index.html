@@ -19,15 +19,13 @@
   <!-- Javascript code -->
   <script type="text/javascript">
     var AppView = Backbone.View.extend({
-      // el = element. Every view has an element associated containing HTML content to be rendered.
       el: '#container',
-      // The first function called when this view is instantiated
+      template: _.template("<h3>Hello <%= who %></h3>"),
       initialize: function(){
         this.render();
       },
-      // $el is a cached jQuery object. You can use jQuery functions to push content - like the Hello World in this case.
       render: function(){
-        this.$el.html("Hello World");
+        this.$el.html(this.template({who: 'Sophie'}));
       }
     });
 
