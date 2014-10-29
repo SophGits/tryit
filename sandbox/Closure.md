@@ -253,6 +253,34 @@ getNumberFor("Dean");
 
 ---
 
+###### Functions creating scope
+```
+var x = 6
+function ass(a, b){
+  var x = a + b;
+  return x;
+}
+
+add(9,2); // outputs 11
+console.log(x) // outputs 6
+```
+The second `var x` only exists in the function's local scope. Because it's been declared with `var` it doesn't modify the variable of the same name 'outside' the function.
+
+In the below, the inner `x` has not been declared with `var` and therefore "shadows" the same-named variable from the nearest external scope.
+
+```
+var x = 6;
+function add(a, b){
+  x = a + b;
+  return x;
+}
+
+add(9,2); // outputs 11
+console.log(x) // outputs 11
+```
+
+---
+
 ##### Initialising an instance
 Instead of initialising myObject with an object literal, do it by calling a function which returns one:
 
