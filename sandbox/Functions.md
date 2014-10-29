@@ -337,6 +337,46 @@ banana(); // alerts "You chose 2"
 
 ---
 
+###### Changing declarations to expresssions
+```javascript
+function walk(){
+  var toNote = "";
+  for(var i = 0; i<5; i++){
+    toNote = toNote + "I'm going for a walk now.\n";
+  }
+  console.log(toNote);
+}
+```
+```
+walk();
+>I'm going for a walk now.
+>I'm going for a walk now.
+>I'm going for a walk now.
+>I'm going for a walk now.
+>I'm going for a walk now.
+```
+
+To change this declared function (which is kept in memory) to an anonymous function expression, assigned to a variable called `walkAway`:
+
+```javascript
+var walkAway = function(){
+  var toNote = "";
+  for(var i=0; i<5; i++){
+    toNote = toNote + "I'm going for a walk now.\n";
+  }
+  console.log(toNote);
+}
+```
+```
+walkAway();
+>I'm going for a walk now.
+>I'm going for a walk now.
+>I'm going for a walk now.
+>I'm going for a walk now.
+>I'm going for a walk now.
+```
+---
+
 ##### Map
 
 Map examples:
