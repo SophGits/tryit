@@ -8,7 +8,15 @@
 <body>
   <!-- Your HTML -->
 
-  <div id="container">Loading...</div>
+  <section id="todoapp">
+    <header id="header">
+      <h1>Todos</h1>
+      <input id="new-todo" placeholder="What needs to be done?">
+    </header>
+    <section id="main">
+      <ul id="todo-list"></ul>
+    </section>
+  </section>
 
   <!-- Libraries -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
@@ -30,6 +38,25 @@
     });
 
     var appView = new AppView();
+
+
+    // Models
+    var app = {}; // create namespace for this app
+
+    app.Todo = Backbone.Model.extend({
+      defaults: {
+        title: '',
+        completed: false
+      }
+    });
+
+    //Collections
+    app.TodoList = Backbone.Collection.extend({
+          model: app.Todo,
+          localStorage: new Store("backbone-todo")
+        });
+    app.todoList = new app.TodoList();
+
   </script>
 
 </body>
