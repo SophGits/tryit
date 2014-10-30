@@ -25,6 +25,7 @@
       <input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %> >
       <label><%- title %></label>
       <input class="edit" value="<%- title %>">
+      <button class="destroy">remove</button>
     </div>
   </script>
 
@@ -70,12 +71,14 @@
       },
       initialize: function(){
         this.model.on('change', this.render, this);
+        this.model.on('destroy', this.remove, this);
       },
       events: {
         'dblclick label' : "edit",
         'keypress .edit' : 'updateOnEnter',
         'blur .edit'     : 'close',
-        'click .toggle'  : 'toggleCompleted'
+        'click .toggle'  : 'toggleCompleted',
+        'click .destroy' : 'destroy'
       },
       edit: function(){
         this.$el.addClass('editing');
@@ -95,6 +98,9 @@
       },
       toggleCompleted: function(){
         this.model.toggle();
+      },
+      destroy: function(){
+        this.model.destroy();
       }
     });
 
@@ -134,6 +140,8 @@
         }
       }
     });
+
+
     // Initializers
     app.appView = new app.AppView();
 
