@@ -18,8 +18,8 @@ Four patterns:
 They differ in how _this_ is initialised.
 
 ###### 1. The method invocation pattern
-✝. When a function is stored as a property of an object, it's called a method.
-✡. When a method is involved, _this_ is bound to that object
+✝. When a function is stored as a property of an object, it's called a method.<br />
+✡. When a method is involved, _this_ is bound to that object<br />
 ☚. if the invocation expression contains `something.something` or `something["something"]` it is invoked as a method.
 
 ```javascript
@@ -193,3 +193,211 @@ function leavingNow(message){
 
 leavingNow(sayBye);
 ```
+
+
+##### Passing function expressions as variables
+>Task: check score and decide if it's LOW, MEDIUM or HIGH. Display a custom message dependent on this.
+> The message should be built inside a function expression and stored in a variable called `message`.
+> `message` gets passed to a declared function called `confirmProceed`.
+> The results of `confirmProceed` should be stored in a variable called `start` (true or false, depending on the user's confirmation).
+
+```javascript
+var score = 270;
+var message;
+
+if(score < 200){
+  message = function(){
+    return confirm("Level LOW\nProceed?");
+  };
+} else if(score <= 300){
+  message = function(){
+    return confirm("Level MEDIUM\nGo ahead?");
+  };
+} else {
+  message = function(){
+    return confirm("HIGH\nNext?");
+  };
+}
+var start = confirmProceed(message);
+function confirmProceed(confirmToGo){
+  return confirmToGo();
+}
+```
+
+---
+
+##### Anonymous functions in an array
+NB: Don't get tripped-up on how to use the semi-colons.
+
+> Task: Create an array of functions, with each cell containing a function that should:
+> Return 8 less than 3 times an input.
+> Return the cube of the sum of an input and 2.
+> Return 9 less than the result of an input squared.
+> Return the remainder after an input is divided by 4.
+
+Answer:
+```javascript
+var array = [
+  function(input){return 3*input -8;},
+  function(input){return (input + 2) * (input+2) * (input +2);},
+  function(input){return (input*input)-9;},
+  function(input){return input%4;}
+];
+```
+##### Puzzle part II
+> Task:
+> Treat an array of functions like a queue; passing the result of one into the next until the queue is empty.
+> Build and store a function which takes in a number and an array.
+
+```javascript
+var puzzleArray = [
+  function(input){return 3*input -8;},
+  function(input){return (input + 2) * (input+2) * (input +2);},
+  function(input){return (input*input)-9;},
+  function(input){return input%4;}
+];
+var start = 2
+var applyAndEmpty = function( input, queue ) {
+  var length = queue.length;
+  for(var i = 0; i < length; i++){
+    input = queue.shift()(input);
+  }
+  return input;
+};
+alert(applyAndEmpty(2, puzzleArray));
+
+```
+///NB if you do this:
+```javascript
+var puzzlers = [
+  function ( a ) { return 8*a - 10; },
+  function ( a ) { return (a-3) * (a-3) * (a-3); },
+  function ( a ) { return a * a + 4; },
+  function ( a ) { return a % 5; }
+];
+var start = 2;
+
+var applyAndEmpty = function(number, queue){
+  for(i=0; i < queue.length; i++){
+    number = queue.shift()(number);
+  }
+  return number;
+};
+alert(applyAndEmpty(2, puzzlers));
+```
+you get this error message:
+
+>"Your queue is getting shorter, but your loop is also checking that decreasing length on each cycle. It needs to run for as many cycles as there WERE functions initially, NOT for as many cycles as there currently ARE in any given cycle.""
+
+That’s why you need that var length = queue.length - because shift() shortens it every cycle.
+
+
+##### Puzzle part III
+>“What is obtained when the result of passing 9 into function 4 is then passed into the function whose array index matches the result of passing 3 into function 2?”
+
+```javascript
+var puzzleArray = [
+  function ( a ) { return 8*a - 10; },
+  function ( a ) { return (a-3) * (a-3) * (a-3); },
+  function ( a ) { return a * a + 4; },
+  function ( a ) { return a % 5; }
+];
+
+alert( puzzleArray[ puzzleArray[1](3) ]( puzzleArray[3](9) ) );
+```
+
+---
+
+##### Store result of a choice in a variable
+> Task:
+> Prompt user for a choice (1, 2 or 3)
+> Pass number to a function, `select`, which creates a message function and returns it in a variable to be used later.
+
+```javascript
+function select(choice){
+  if(choice == 1){
+     return function () {
+     alert("You chose 1");
+     };
+   } else if (choice == 2){
+     return function () {
+     alert("You chose 2");
+     };
+   } else if (choice == 3) {
+     return function () {
+       alert("You chose 3");
+     };
+   }
+ }
+
+var choice = 1;
+var banana = select(choice);
+banana(); // alerts "You chose 2"
+```
+
+---
+
+###### Changing declarations to expresssions
+```javascript
+function walk(){
+  var toNote = "";
+  for(var i = 0; i<5; i++){
+    toNote = toNote + "I'm going for a walk now.\n";
+  }
+  console.log(toNote);
+}
+```
+```
+walk();
+>I'm going for a walk now.
+>I'm going for a walk now.
+>I'm going for a walk now.
+>I'm going for a walk now.
+>I'm going for a walk now.
+```
+
+To change this declared function (which is kept in memory) to an anonymous function expression, assigned to a variable called `walkAway`:
+
+```javascript
+var walkAway = function(){
+  var toNote = "";
+  for(var i=0; i<5; i++){
+    toNote = toNote + "I'm going for a walk now.\n";
+  }
+  console.log(toNote);
+}
+```
+```
+walkAway();
+>I'm going for a walk now.
+>I'm going for a walk now.
+>I'm going for a walk now.
+>I'm going for a walk now.
+>I'm going for a walk now.
+```
+---
+
+##### Map
+
+Map examples:
+
+```javascript
+
+var namesArray = [  ["Joe", "Bloggs"],
+                    ["Jo", "Blogs"],
+                    ["Christine", "Sings"],
+                    ["Dan", "&Dan"]  ];
+
+var modifiedNames = namesArray.map(function(item){
+    return item[0] + " " + item[1];
+  }
+);
+
+```
+> modifiedNames is now: ["Joe Bloggs", "Jo Blogs", "Christine Sings", "Dan &Dan"]
+
+##### Shift
+
+`var array = ["a", "b", "c", "d"];`
+`var firstItem = array.shift();`
+`firstItem` is now "a"
