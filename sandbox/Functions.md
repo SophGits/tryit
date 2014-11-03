@@ -378,6 +378,18 @@ walkAway();
 ---
 
 ##### Map
+Map is a good one-line solution for a for(in) loop; so instead of
+```
+var nums = [12, 4, 5, 3, 9];
+var results = [];
+for(var i =0; i < nums.length; i++){
+  results[i] = someFunctionHere(nums[i]);
+}
+```
+you just do:
+```
+var results = nums.map(someFunctionHere);
+```
 
 Map examples:
 
@@ -401,3 +413,39 @@ var modifiedNames = namesArray.map(function(item){
 `var array = ["a", "b", "c", "d"];`
 `var firstItem = array.shift();`
 `firstItem` is now "a"
+
+
+##### Closures practise - internally incrementing
+```javascript
+function makePie(ingredient){
+  var number = 0;
+  return function(name){
+    number ++;
+    console.log("Ingredient: " + ingredient + ".\nName: " + name + ".\n" + ingredient + " pie number #" + number + ".");
+  }
+}
+
+var getApple = makePie("Apple");
+getApple("Bob");
+
+var getCarrot = makePie("Carrot");
+getCarrot("Bob"); // carrot pie number 1
+getCarrot("Bob"); // carrot pie number 2
+```
+
+Watch the numbers count up:
+
+```
+function warningMaker(cakeType){
+  var count = 0;
+  return function(number, colour){
+    count += 1;
+    console.log("There are #" + number + " types of " + cake + " around. \nThey are " + colour + " and we have told you " + count + " time(s) today." )
+  }
+}
+
+var doughnut = warningMaker("icingDoughnut");
+doughnut(5, "pink"); // 1 time(s) today
+doughnut(5, "pink"); // 2 time(s) today
+```
+Using a closure the above internally keeps track of `count`.
