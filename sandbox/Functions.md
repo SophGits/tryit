@@ -29,8 +29,8 @@ var myObject = {
     this✡.value☚ ++;
   }
 }
-myObject.increment();  //1
-myObject.increment(2); //3
+myObject.increment();  // 1
+myObject.increment(2); // 3
 ```
 
 
@@ -41,7 +41,7 @@ When the function in _not_ the property of an object, it is invoked as a functio
 var add = function(a, b){
   return a + b;
 };
-var sum = add✝(3,4); //7
+var sum = add✝(3,4); // 7
 ```
 _this_ is bound to the global object, which is annoying.
 You'd want it to be bound to the outer function.
@@ -74,7 +74,7 @@ Banana.prototype.get_status = function(){
   return this.status
 };
 var myBanana = new Banana✝('sad');
-console.log(myBanana.get_status()); //sad
+console.log(myBanana.get_status()); // sad
 ```
 If a constructor is called without using the `new` prefix, bad things will happen and you won't see a compile-time or runtime warning.
 
@@ -102,7 +102,7 @@ var status = Banana.prototype.get_status.apply(brian);
 ```
 
 ##### Arguments
-An `arguments` array-like object is available to all functions when theyre invoked. They can include excess arguments that weren't assigned to parameters, eg:
+An `arguments` array-like object is available to all functions when they're invoked. They can include excess arguments that weren't assigned to parameters, eg:
 
 ```javascript
 var add = function(){
@@ -175,15 +175,15 @@ We tend to do the function expression above as an anonymous function (ie "add" a
 Useful when you want to do something like:
 ```javascript
 var lang = "eng";
-function(lang){
-  if(lang = "eng"){
+var function(lang){
+  if(lang === "eng"){
     var sayBye = function(){
-      console.log("I'm off, see you soon.")
-    };
-  else if(lang = "italian"){
+      console.log("I'm off, see you soon.");
+    }
+  } else if(lang = "italian"){
     var sayBye = function(){
-      console.log("Ciao bello.")
-    };
+      console.log("Ciao bello.");
+    }
   }
 }
 
@@ -193,7 +193,7 @@ function leavingNow(message){
 
 leavingNow(sayBye);
 ```
-
+#check this ^
 
 ##### Passing function expressions as variables
 >Task: check score and decide if it's LOW, MEDIUM or HIGH. Display a custom message dependent on this.
@@ -378,6 +378,18 @@ walkAway();
 ---
 
 ##### Map
+Map is a good one-line solution for a for(in) loop; so instead of
+```
+var nums = [12, 4, 5, 3, 9];
+var results = [];
+for(var i =0; i < nums.length; i++){
+  results[i] = someFunctionHere(nums[i]);
+}
+```
+you just do:
+```
+var results = nums.map(someFunctionHere);
+```
 
 Map examples:
 
@@ -401,3 +413,39 @@ var modifiedNames = namesArray.map(function(item){
 `var array = ["a", "b", "c", "d"];`
 `var firstItem = array.shift();`
 `firstItem` is now "a"
+
+
+##### Closures practise - internally incrementing
+```javascript
+function makePie(ingredient){
+  var number = 0;
+  return function(name){
+    number ++;
+    console.log("Ingredient: " + ingredient + ".\nName: " + name + ".\n" + ingredient + " pie number #" + number + ".");
+  }
+}
+
+var getApple = makePie("Apple");
+getApple("Bob");
+
+var getCarrot = makePie("Carrot");
+getCarrot("Bob"); // carrot pie number 1
+getCarrot("Bob"); // carrot pie number 2
+```
+
+Watch the numbers count up:
+
+```
+function warningMaker(cakeType){
+  var count = 0;
+  return function(number, colour){
+    count += 1;
+    console.log("There are #" + number + " types of " + cake + " around. \nThey are " + colour + " and we have told you " + count + " time(s) today." )
+  }
+}
+
+var doughnut = warningMaker("icingDoughnut");
+doughnut(5, "pink"); // 1 time(s) today
+doughnut(5, "pink"); // 2 time(s) today
+```
+Using a closure the above internally keeps track of `count`.
