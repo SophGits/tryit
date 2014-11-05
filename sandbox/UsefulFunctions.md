@@ -21,7 +21,28 @@
 `filter`, `for each` and `map` output arrays.
 `reduce` takes {} or [] and outputs {}, [], a number or a string.
 
-###### for loop
+##### Some and Every
+Returns true or false
+```javascript
+[1, 2, 3, 4].some(function(val, i){
+  return val === 3;
+});
+// true
+```
+```javascript
+[1, 2, 3, 4].every(function(val, i){
+  return val === 3;
+});
+// false
+```
+
+###### map
+```javascript
+var tripled = [1, 2, 3].map(function(val, i){
+  return val*3;
+});
+// tripled --> [3, 6, 9]
+```
 
 ###### filter
 Returns an array.
@@ -64,6 +85,18 @@ numbers.filter(function(val, i){
 ```
 
 ###### reduce
+`reduce` takes this form:
+```
+blah.reduce(function(ret, val , i){
+  ~modify ret~
+  return ret;
+}, []✝)
+```
+✝ it gets initialised here (in this example, as an array) - and it can be an array, object, string, number... It doesn't have to be empty or '0' - you can start at 0 or 10 or 50 etc.
+
+If you don't return ret each time, you'll get `undefined`.
+
+
 Output a string
 ```javascript
 [1, 2, 3].reduce(function(ret, val, i){
@@ -166,6 +199,38 @@ function init(){
 
 }
 ```
+
+###### for loop
+On an object, use Object.keys()
+
+```javascript
+var messages = {
+    "key_1": {
+      "your_name": "jimmy",
+      "your_msg": "hello world"
+    },
+    "key_2": {
+      "your_name": "billy",
+      "your_msg": "foo equals bar"
+    }
+}
+
+for (var key in messages) {
+   var obj = messages[key];
+   for (var prop in obj) {
+      // important check that this is objects own property
+      // not from prototype prop inherited
+      if(obj.hasOwnProperty(prop)){
+        console.log(prop + " = " + obj[prop]);
+      }
+   }
+}
+```
+
+
+###### case/ switch
+
+
 
 #### Exercises
 ```javascript
