@@ -175,14 +175,14 @@ We tend to do the function expression above as an anonymous function (ie "add" a
 Useful when you want to do something like:
 ```javascript
 var lang = "eng";
-var function(lang){
+function message(lang){
   if(lang === "eng"){
     var sayBye = function(){
-      console.log("I'm off, see you soon.");
+      return console.log("I'm off, see you soon.");
     }
   } else if(lang = "italian"){
     var sayBye = function(){
-      console.log("Ciao bello.");
+      return console.log("Ciao bello.");
     }
   }
 }
@@ -449,3 +449,22 @@ doughnut(5, "pink"); // 1 time(s) today
 doughnut(5, "pink"); // 2 time(s) today
 ```
 Using a closure the above internally keeps track of `count`.
+
+
+##### Getting value from an object
+var array = {
+  item1: {id: 2, weight: 10, colour: "blue"},
+  item2: {id: 4, weight: 8, colour: "pink"},
+  item3: {id: 5, weight: 12, colour: "yellow"},
+  item4: {id: 6, weight: 8, colour: "green"},
+  "item 5": {id: 1, weight: 30, colour: "red"}
+};
+
+function listItems(array){
+  for (var item in array){
+    console.log("This is " + item + ", with " + array[item]['weight'] + " heaviness");
+  }
+}
+listItems(array);
+
+> NB: next do "Here’s how you stick another property on that object and loop over everything that has heft:"
