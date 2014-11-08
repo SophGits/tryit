@@ -29,3 +29,24 @@ or can use:  ```basket.__proto__;```
 ---
 
 #### [Useful blogpost by Alex Sexton](https://alexsexton.com/blog/2013/04/understanding-javascript-inheritance/) (see final code block)
+
+### Inheritance logic
+
+```javascript
+var Car = function(){_stuff_}
+var c = new Car();
+var Mazda = function(){_stuff_}
+mazda.prototype = c;
+var m = new Mazda
+```
+In this case, m is an instance of Car
+But
+m's constructor is also Car - not Mazda.
+
+In order to sort this you have to do:
+
+`Mazda.prototype.constructor = Mazda`
+
+And it has to be after you declare the Car instance.
+
+>Source: Source Decoded channel on YouTube. Video title: "I Love *&@^#! JavaScript!"
