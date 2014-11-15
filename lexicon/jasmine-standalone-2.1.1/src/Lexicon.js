@@ -1,6 +1,7 @@
 // var src = new CommaSeparatedLexicon("lorem,ipsum,loREm,lorem,one");
 // src.nextWord();
 
+
 var CommaSeparatedLexicon = function( input ){
   var wordsArray = [];
   input
