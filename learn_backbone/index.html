@@ -123,7 +123,7 @@
       el: '#todoapp',
       initialize: function () {
         this.input = this.$('#new-todo');
-        // when new elements are added to the collection render then withaddOne
+        // when new elements are added to the collection render them with addOne
         app.todoList.on('add', this.addOne, this);
         app.todoList.on('reset', this.addAll, this);
         app.todoList.fetch(); // Loads list from local storage
