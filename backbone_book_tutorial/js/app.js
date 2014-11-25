@@ -1,4 +1,10 @@
 (function ($) {
+  var books = [{title:"JS the good parts", author:"John Doe", releaseDate:"2012", keywords:"JavaScript Programming"},
+          {title:"CS the better parts", author:"John Doe", releaseDate:"2012", keywords:"CoffeeScript Programming"},
+          {title:"Scala for the impatient", author:"John Doe", releaseDate:"2012", keywords:"Scala Programming"},
+          {title:"American Psyco", author:"Bret Easton Ellis", releaseDate:"2012", keywords:"Novel Splatter"},
+          {title:"Eloquent JavaScript", author:"John Doe", releaseDate:"2012", keywords:"JavaScript Programming"}]
+
     // BOOK MODEL
     var Book = Backbone.Model.extend({
         defaults:{
@@ -45,7 +51,7 @@
       // initialize is optional but must contain a function - which will be called by Backbone when a view constructor is called.
       // the render means as soon as we call the LibraryView constructor it will get rendered, so this is a self rendering view. We don’t have to make it self rendered but it is common practice.
         this.collection = new Library(books);
-        // Above: Library is a collection that expects an array of objects that it can use to create Book models. We haven’t defined the books variable yet....
+        // Above: Library is a collection that expects an array of objects that it can use to create Book models. The books are defined at the top of this page.
         this.render();
       },
       // Below, we are iterating over all the models (Books) in our collection. The first argument to “each” is the array that will be iterated over. The second argument is the function that will be applied to each member of the array. The function in our case calls the renderBook function with the current model as argument. We need to use “that” to get this right since if we would have used “this” it would have referenced the function itself.
