@@ -1,5 +1,5 @@
 (function ($) {
-
+    // BOOK MODEL
     var Book = Backbone.Model.extend({
         defaults:{
             coverImage:"img/placeholder.gif",
@@ -9,7 +9,7 @@
             keywords:"JavaScript Programming"
         }
     });
-
+    // BOOK VIEW
     var BookView = Backbone.View.extend({
       tagName: "div",
       className: "bookContainer",
@@ -21,6 +21,17 @@
         this.$el.html(tmpl(this.model.toJSON())); //this.el is what we defined in tagName. Use $el to access the jQuery html() fn
         return this;
       }
+    });
+    // NEW BOOK MODEL INSTANCE
+    var book = new Book({
+      title: "Some title",
+      author: "John Doe",
+      ReleaseDate: "2012",
+      keywords: "JavaScript Programming"
+    });
+    // NEW BOOK VIEW INSTANCE
+    bookView = new BookView({
+      model: book
     });
 
 })(jQuery);
