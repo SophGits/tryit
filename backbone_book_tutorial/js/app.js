@@ -28,22 +28,13 @@
         return this;
       }
     });
-    // NEW BOOK MODEL INSTANCE
-    var book = new Book({
-      title: "Some title",
-      author: "John Doe",
-      ReleaseDate: "2012",
-      keywords: "JavaScript Programming"
-    });
-    // NEW BOOK VIEW INSTANCE
-    bookView = new BookView({
-      model: book
-    });
+    // INSTANTIATE COLLECTION VIEW
+    var libraryView = new LibraryView();
     // BOOK COLLECTION
     var Library = Backbone.Collection.extend({
         model:Book
     });
-    //COLLECTION VIEW
+    // COLLECTION VIEW
     var LibraryView = Backbone.View.extend({
       el: $("#books"),
       // a view can take a tagName or an el. When using tagName the view will create the element for us (and we are responsibe for inserting it into the page). By using el we are specifying an existing element and the view will write it in where it already is on the page.
