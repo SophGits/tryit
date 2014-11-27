@@ -1,0 +1,4398 @@
+[
+    {
+        "item": "Aarts",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fermented milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mongolia",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Amasi",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fermented milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "South Africa",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ayran",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Turkey",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Turkish cuisine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Yogurt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Salt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Central Asia",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Middle East",
+        "isItVegan": "False"
+    },
+    {
+        "item": "South-eastern Europe",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Balkans",
+        "isItVegan": "False"
+    },
+    {
+        "item": "North Caucasus",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Baked milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Boiling",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Russia",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ukraine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Belarus",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Simmering",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Basundi",
+        "isItVegan": "False"
+    },
+    {
+        "item": "India",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Indian cuisine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Dessert",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bhuna khoya",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Khan garh",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pakistan",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Khoa",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Blaand",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Scotland",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Vikings",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fermented milk product",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Whey",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Alcohol",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Black Kashk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Central Asia",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Yogurt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Booza",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Buffalo curd",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Water Buffalo",
+        "isItVegan": "False"
+    },
+    {
+        "item": "India",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pakistan",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sri Lanka",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Nepal",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bulgarian yogurt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bulgaria",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Yogurt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bacteria",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fermentation (food)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lactobacillus bulgaricus",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Streptococcus thermophilus",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Butter",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Churning (butter)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fermentation (food)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Spread (food)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Condiment",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cooking",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Frying",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Butterfat",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Protein",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Butterfat",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fat",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fat content of milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Buttermilk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Butter",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Buttermilk koldskål",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Denmark",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Beverage",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Soup",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Buttermilk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Buttermilk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Emulsion",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Caramelization",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cacık",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Turkey",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Yogurt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ottoman Empire",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Greece",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Tzatziki",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Tarator",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Balkans",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Camel milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bedouin",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Nomad",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pastoral",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Camels",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Casein",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Phosphoprotein",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cow",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Caudle",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Eggnog",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Middle Ages",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Chaas",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Buttermilk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "India",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Malai",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Chal",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Turkic people",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Turkmen people",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kazakhs",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fermentation (food)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Camel milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Central Asia",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kazakhstan",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Turkmenistan",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Chalap",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kyrgyzstan",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kazakhstan",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Yogurt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Salt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Carbonated water",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Chass",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Buttermilk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Gujarati language",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Gujarati people",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Gujarat",
+        "isItVegan": "False"
+    },
+    {
+        "item": "India",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lassi",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Coagulation (milk)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Casein",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cattle",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Water Buffalo",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Goat",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sheep's milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Clabber (food)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pasteurization",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Humidity",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Temperature",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Yogurt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Clotted cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cream tea",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Condensed milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Water",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sugar",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cottage cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Whey",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Butterfat",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Homogenization (chemistry)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cream cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Crème anglaise",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Egg yolk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Vanilla",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Crème fraîche",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sour cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Butterfat",
+        "isItVegan": "False"
+    },
+    {
+        "item": "PH",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Souring",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Microbiological culture",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sour cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Viscosity",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cuajada",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Spain",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Curd",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ewe's milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Spain",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Basque Country (autonomous community)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Navarre",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Castilla y León",
+        "isItVegan": "False"
+    },
+    {
+        "item": "La Rioja (autonomous community)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Curd",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Rennet",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Acid",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lemon juice",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Vinegar",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Casein",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Curd snack",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Quark (cheese)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Baltic states",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Russia",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Belarus",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ukraine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kazakhstan",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Custard",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sauce",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Éclair (pastry)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Dadiah",
+        "isItVegan": "False"
+    },
+    {
+        "item": "West Sumatra",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Indonesia",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Raw milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Domestic buffalo",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bamboo",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Banana leaf",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fermentation (food)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Daigo (dairy product)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Japan",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Dondurma",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Turkey",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ice cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sugar",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Salep",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mastic (plant resin)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Donkey milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Asinus",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Donkey",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Egypt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ancient Egypt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Alimentation",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cosmetics",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Dulce de Leche",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Argentina",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Doogh",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Yogurt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Iran",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Afghanistan",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Azerbaijan",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Armenia",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Iraq",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Syria",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Turkey",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Carbonated",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Evaporated milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Shelf stable food",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Condensed milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Filled milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fat",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Vegetable oils",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Dairy cow",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Filmjölk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Scandinavia",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Scandinavia",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Yogurt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Feta",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Greece",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fromage frais",
+        "isItVegan": "False"
+    },
+    {
+        "item": "France",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Belgium",
+        "isItVegan": "False"
+    },
+    {
+        "item": "French language",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fermented milk products",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lactic acid bacteria",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lactobacillus",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lactococcus",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Leuconostoc",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Skyr",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Frozen custard",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ice cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Egg (food)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sugar",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Frozen yogurt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "United States",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Yogurt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ice cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Galalith",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Organic compound",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Plastic",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Casein",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Formaldehyde",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Gelato",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Italy",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sugars",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fruit",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Nut (fruit)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Puree",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Goat's milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Gombe (dish)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sogn og Fjordane",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Norway",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Gomme (food)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Norway",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Norwegian cuisine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Porridge",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Oat",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Rice",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Horse",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mongols",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kumis",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ice cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Dessert",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ice milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Frozen dessert",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fat",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ice cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Indian dairy products",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Indian cuisine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Chhena",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Khoa",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Paneer",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Infant formula",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Processed food",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Marketing",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Infant",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Baby bottle",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Junket (dessert)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Rennet",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Enzyme",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Curdle",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kashk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Armenian cuisine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Iranian cuisine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lebanese Cuisine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Palestinian Cuisine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Syrian cuisine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kurdish people",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kaymak",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Turkey",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Clotted cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Water buffalo",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cow",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kefir",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Turkic Countries (page does not exist)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fermented milk products",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Goat's milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sheep milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Khoa",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Indian cuisine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pakistani cuisine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kulfi",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Dairy",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Dessert",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Indian Subcontinent",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ice cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kumis",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mare",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Central Asia",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Steppe",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Turkic peoples",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bashkirs",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kalmyks",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kazakhs",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kyrgyz people",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mongol",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Uyghurs",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Yakuts",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lassi",
+        "isItVegan": "False"
+    },
+    {
+        "item": "India",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Punjab",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Yogurt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Spices",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Leben (milk product)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Arab world",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Malai",
+        "isItVegan": "False"
+    },
+    {
+        "item": "India",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Clotted cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Matzoon (yogurt)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Armenia",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mammary gland",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mammal",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Nutrition",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Digestion",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milk skin",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Protein",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Denaturation (biochemistry)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Casein",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Japan",
+        "isItVegan": "False"
+    },
+    {
+        "item": "So (Dairy)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mitha Dahi",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Yogurt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "West Bengal",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Odisha",
+        "isItVegan": "False"
+    },
+    {
+        "item": "India",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bangladesh",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Moose milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milkmaid",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Moose milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kostroma Moose Farm",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kostroma Oblast",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Russia",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mursik",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kenya",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kalenjin people",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kenya",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Gourd",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Paneer",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pomazánkové máslo",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Spread (food)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sour cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milk powder",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Buttermilk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Powdered milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Drying (food)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Shelf life",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Refrigeration",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Processed cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fermentation (food)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Emulsifier",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Edible salt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Food coloring",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Whey",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pytia",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Curd",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Rennet",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Qimiq",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Gelatine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Quark (dairy product)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Denaturation (biochemistry)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fromage frais",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Qatiq",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fermented milk products",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Turkic countries",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bulgaria",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Reindeer husbandry",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Herding",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sami people",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Nenets people",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ryazhenka",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ukraine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Baked milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Semifreddo",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Dessert",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Custard",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mousse",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Whipped cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sergem",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Tibet",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Tibetan cuisine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sheep milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Domestic sheep",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Shrikhand",
+        "isItVegan": "False"
+    },
+    {
+        "item": "India",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Indian cuisine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Strained yogurt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Maharashtrian cuisine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Gujarati cuisine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Skorup",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kajmak",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Skyr",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Iceland",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Strained yogurt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Icelandic cuisine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Smântână",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Romania",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Souring",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Heavy cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Smetana (dairy product)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Central and Eastern Europe",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Souring",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Heavy cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "So (dairy product)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Japan",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Soft serve",
+        "isItVegan": "False"
+    },
+    {
+        "item": "United States",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ice cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sour cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fermentation in food processing",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lactic acid bacteria",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bacterial culture",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Soured milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fermentation",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Spaghettieis",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mannheim",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Germany",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ice cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Spaghetti",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mannheim",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Stewler",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Russia",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ukraine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fermented milk product",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Russia",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ukraine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ryazhenka",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Baked milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Strained yogurt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Whey",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Súrmjólk (page does not exist)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Iceland",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Urdă",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Romania",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Vaccenic acid",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Omega-7 fatty acid",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fatty acid",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ruminant",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Viili",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mesophilic",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fermented milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Nordic countries",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lactic acid",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Vla",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Netherlands",
+        "isItVegan": "False"
+    },
+    {
+        "item": "United States",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pudding",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Whey",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Curd",
+        "isItVegan": "False"
+    },
+    {
+        "item": "By-product",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Casein",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Whey protein",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Globular protein",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Whey",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Whipped cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cream",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mixer (cooking)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Whisk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fork",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Vanilla",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Help:IPA for French",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Yak butter",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Staple food",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Herder",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Central Asia",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Tibetan Plateau",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pack yak",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fibre",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Working animal",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Yakult",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Japan",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Minoru Shirota",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Probiotic",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Dairy product",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fermentation (food)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Skimmed milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bacterium",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lactobacillus casei",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ymer (dairy product)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Denmark",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fermented milk products",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bacteria",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lactococcus lactis",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Yogurt",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Soy milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Plant milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Almond milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Coconut milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bacteria",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fermentation (food)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Žinčica",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sheep milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Whey",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kefir",
+        "isItVegan": "False"
+    },
+    {
+        "item": "By-product",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bryndza",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Portal:Food",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Portal:Drink",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Portal:Agriculture and Agronomy",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Portal:Culture",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Portal:Lists",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template:Lists of prepared foods",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template talk:Lists of prepared foods",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lists of prepared foods",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of African dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of American foods",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of foods of the Southern United States",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Argentine dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Bangladeshi dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Brazilian dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Burmese dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Chinese dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Colombian dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cuban cuisine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of English dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Philippine dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of French dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of German dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Greek dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Gyeongsang dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Hawaiian dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Hungarian dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Indian dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Indonesian dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Irish dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Israeli dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Italian dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Japanese dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Jewish cuisine dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Korean dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Jeju dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Jeolla dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Seoul dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Malaysian dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Maltese dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Mexican dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Moroccan dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Nepalese dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Palestinian dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Peruvian dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Polish dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Romanian cuisine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Russian dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Spanish dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Thai dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Uzbek dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Vietnamese dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of breakfast beverages",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of breakfast cereals",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of breakfast foods",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of butters",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of chocolate-covered foods",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Christmas dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of dishes using coconut milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of coffee dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of deep fried foods",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Dip (food)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of dried foods",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of fermented foods",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of fermented soy products",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of foods made from maple",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of hot sauces",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of military food topics",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of pastries",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of pickled foods",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of pies, tarts and flans",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of poppy seed pastries and dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of porridges",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of puddings",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of rolled foods",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of sandwiches",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of sauces",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of smoked foods",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of soul foods and dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of soups",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of cheese soups",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fish soup",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of seafood soups",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of stews",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of street food",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of twice-baked foods",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of hors d'oeuvre",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of tapas",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of breads",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bread roll",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bun",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of crackers",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of dumplings",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of fried dough foods",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of legume dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of maize dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of noodles",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of noodle dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of pasta",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of rice dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of tofu dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of butter dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Brined cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of cheese dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of banana dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of eggplant dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Eggplant salads and appetizers",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of lemon dishes and beverages",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of potato dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of salads",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of vegetable dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cod (food)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of crab dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Herring (food)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of fish dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of fish sauces",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of raw fish dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of seafood dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of bacon dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of beef dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Shredded beef",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of chicken dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of egg dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of hamburgers",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of kebabs",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of lamb dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of pork dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of sausage dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of sausages",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of bacon substitutes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of meat substitutes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of cakes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of candies",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of cookies",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of desserts",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of doughnut varieties",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of pastries",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of pies, tarts and flans",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of American cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of British cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of French cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Irish cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Italian cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Polish cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of desserts",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of American desserts",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Argentine sweets and desserts",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Bangladeshi sweets and desserts",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of British desserts",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Chinese desserts",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of French desserts",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of German desserts",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Indian sweets and desserts",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Italian desserts",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Japanese desserts and sweets",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Korean desserts",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of tteok varieties",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Pakistani sweets and desserts",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Polish desserts",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Romanian cuisine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Sri Lankan sweets and desserts",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Turkish desserts",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of accompaniments to french fries",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of condiments",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Indian condiments",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Japanese condiments",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Pakistani condiments",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of American breads",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of American sandwiches",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Indian snack foods",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Vietnamese culinary specialities",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Category:Lists of foods",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Portal:Food",
+        "isItVegan": "False"
+    },
+    {
+        "item": "commons:Category:Cuisine by country",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Wikipedia:WikiProject Food and drink",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template:Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template talk:Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Types of cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Category:Acid-set cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Blue cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Brined cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cream cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Goat cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Green cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pasta filata",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Processed cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Types of cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Smoked cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Types of cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Types of cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Tomme de Savoie cheese, France",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Category:Cheeses by animal's milk",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Category:Cow's-milk cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Category:Goat's-milk cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Reindeer cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Category:Sheep's-milk cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Category:Water buffalo's-milk cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Category:Yak's-milk cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Category:Cheeses by country",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bandel cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Cornish cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of French cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of German cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Irish cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Italian cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cheeses of Mexico",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Category:Middle Eastern cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Dutch cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Polish cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Category:Romanian cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Spanish cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Swiss cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of British cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of American cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Appellation d'Origine Contrôlée cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Greek Protected Designations of Origin cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Italian PDO cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "American Cheese Society",
+        "isItVegan": "False"
+    },
+    {
+        "item": "International Cheese Awards",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lucerne Cheese Festival",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mountain Cheese Olympics",
+        "isItVegan": "False"
+    },
+    {
+        "item": "National Cheese Exchange",
+        "isItVegan": "False"
+    },
+    {
+        "item": "The Great British Cheese Festival",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of cheese dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of cheesemakers",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of cheese soups",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cheese ripening",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Category:Cheese dishes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Category:Cheesemakers",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template:American cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template talk:American cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of American cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Baby Swiss",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bergenost",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Brick cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Buffalo mozzarella",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cheese curds",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Colby cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Colby-Jack",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cougar Gold cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cream cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Creole cream cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cuba cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "D'Isigny",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Hoop cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Humboldt Fog",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Kunik cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Liederkranz cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Maytag Blue cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Monterey Jack",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Muenster cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Parmesan",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pepper jack cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pinconning cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Red Hawk cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "String cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Swiss cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Teleme cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Wisconsin cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template:British cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template talk:British cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of British cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Applewood cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Beacon Fell Traditional Lancashire Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Beenleigh Blue cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bowland cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Buxton Blue",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cheddar cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cheshire cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Chevington cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Coquetdale cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Derby cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Dorset Blue Vinney",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Dovedale cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fine Fettle Yorkshire",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Five Counties cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Gloucester cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Harbourne Blue",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lancashire cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lincolnshire Poacher cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Little Derby",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Newport 1665",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Norbury Blue",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Red Leicester",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Red Windsor",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sage Derby",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Shropshire Blue",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Stichelton",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Stilton cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Stinking Bishop cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Suffolk Gold cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sussex Slipcote",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Swaledale cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Waterloo cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Wensleydale cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Wrekin White",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cornish Yarg",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bonchester cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Caboc",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Crowdie",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Dunlop cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Isle of Mull Cheddar",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lanark Blue",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Caerphilly cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pantysgawn",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Tintern cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Y Fenni cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Carmarthenshire Cheese Company",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cathedral City Cheddar",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Coleraine cheddar",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ilchester Cheese Company",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Neal's Yard Dairy",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pilgrims Choice",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Yeo Valley Organic",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template:French cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template talk:French cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of French cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Appellation d'origine contrôlée",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Abondance cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Banon cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Beaufort cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bleu d'Auvergne",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bleu des Causses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bleu de Gex",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bleu du Vercors-Sassenage",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Brie de Meaux",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Brie de Melun",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Brocciu",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Camembert",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cantal cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Chabichou du Poitou",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Chaource cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Chevrotin",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Comté cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Coulommiers cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Crottin de Chavignol",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Époisses de Bourgogne",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fourme d'Ambert",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fourme de Montbrison",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Laguiole cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Langres cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Livarot cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Maconnais cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Maroilles cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mont d'Or",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Morbier cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Munster cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Neufchâtel cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ossau-Iraty",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pélardon",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Picodon",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pont-l'Évêque cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pouligny-Saint-Pierre cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Reblochon",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Rigotte de Condrieu",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Rocamadour cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Roquefort",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Saint-Nectaire",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sainte-Maure de Touraine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Salers cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Selles-sur-Cher cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Valençay cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Abbaye de Tamié",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bleu de Bresse",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Brillat-savarin",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Brie",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cabécou",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cancoillotte",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Carré de l'Est",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Chaumes",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Clochette",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Délice d'Argental",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Édel de Cléron",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Etorki",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Explorateur",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Gaperon",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mont des Cats cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mimolette",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Olivet cendré",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Port Salut",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Raclette",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Rochebarron",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Saint Agur Blue",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Saint-Félicien cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Saint-Marcellin",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Saint-Paulin cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Vacherin",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Vieux-Boulogne",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template:German cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template talk:German cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of German cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Butterkäse",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cambozola",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Handkäse",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Harzer",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Hirtenkäse",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Limburger",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milbenkäse",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Obatzda",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Quark (dairy product)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Rauchkäse",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Tilsit cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Weisslacker",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template:Irish cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template talk:Irish cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Irish cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Abbey Cheese Company",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ardagh Castle cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ardrahan Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ardsallagh Goats Products",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bay Lough cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Béal Organic Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Blue Rathgore",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bluebell Falls Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Burren Gold",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cahills Farm cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Carrigaline Farmhouse Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Clonmore Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Coleraine cheddar",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Coolea Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cooleeney Farmhouse Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Corleggy Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Dubliner Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Durrus Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fivemiletown Creamery",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Gleann Gabhra",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Glyde Farm Produce",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Gubbeen Farmhouse Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Imokilly Regato",
+        "isItVegan": "False"
+    },
+    {
+        "item": "J&L Grubb",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Milleens",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mossfield Organic Farm",
+        "isItVegan": "False"
+    },
+    {
+        "item": "St Tola",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template:Italian cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template talk:Italian cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Italian cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Protected Geographical Status",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Asiago cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bitto",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bra cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Caciocavallo",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Casciotta d'Urbino",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Castelmagno cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Fontina",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Formaggio di Fossa",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Gorgonzola",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Grana Padano",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Montasio",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Monte Veronese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Buffalo mozzarella",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Parmigiano-Reggiano",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pecorino",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pecorino Romano",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pecorino Sardo",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pecorino Siciliano",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pecorino Toscano",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Piave cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Provolone",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Spressa delle Giudicarie",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Raschera",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Taleggio cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Toma Piemontese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Valle d'Aosta Fromadzo",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Valtellina Casera",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bel Paese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bocconcini",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Brös",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Burrata",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cacio figurato",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Caciotta",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Caprino (cheese)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Casu marzu",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Crucolo",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Dolcelatte",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Galbanino",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mascarpone",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Morlacco",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Mozzarella",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Paddraccio",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Pallone di Gravina",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ricotta",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Robiola",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Rosa Camuna",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Scamorza",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sottocenere al tartufo",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Stracchino",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Stracciatella di bufala",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Auricchio",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Parmalat",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sterilgarda",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template:Polish cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template talk:Polish cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Polish cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bryndza",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bryndza Podhalańska",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bundz",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Gołka",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Korycinski",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Oscypek",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Quark (dairy product)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Redykołka",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Tylżycki",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template:Swiss cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template talk:Swiss cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Category:Swiss cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of Swiss cheeses",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Appenzeller cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Berner Alpkäse",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Emmental cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Gruyère cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "L'Etivaz",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Raclette",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Sbrinz",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Schabziger",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Tête de Moine",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Tilsit cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Vacherin",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template:Cheesemakers",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Template talk:Cheesemakers",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cheesemaker",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lucy Appleby",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Laura Chenel",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Joseph Harding",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Alex James (musician)",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Catherine Mathieson",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lino Saputo",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Ignazio Vella",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Daphne Zepos",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Beecher's Handmade Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Groupe Bel",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Bothwell Cheese",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cabot Creamery",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Charleville cheddar",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Chèvréchard",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Cowgirl Creamery",
+        "isItVegan": "False"
+    },
+    {
+        "item": "DCI Cheese Company",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Gossner Foods",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Lactalis",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Marin French Cheese Company",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Valley Shepherd Creamery",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Winchester Cheese Company",
+        "isItVegan": "False"
+    },
+    {
+        "item": "List of cheesemakers",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Category:Cheesemakers",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Portal:Food",
+        "isItVegan": "False"
+    },
+    {
+        "item": "Wikipedia:WikiProject Food and drink",
+        "isItVegan": "False"
+    }
+]

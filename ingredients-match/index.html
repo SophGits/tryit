@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+  <head>
+    <title>Ingredients match</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="show-results.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+
+  <form name="ingredientsForm">
+    <div class="instructions">
+      <h1>Enter ingredients:</h1>
+      <small>(comma-separated)</small>
+    </div>
+    <textarea rows="4"cols="50" name="ingredients">Cheese, mango, banana, soya milk, whole milk, Casein
+    </textarea>
+    <input type="submit" value="Check them"></input>
+  </form>
+
+  <div class="results">
+    <h2>Vegan</h2>
+    <ol></ol>
+  </div>
+
+  <div class="non-vegan-results">
+    <h2>Non-vegan</h2>
+    <ol></ol>
+  </div>
+
+  <div class="non-match-results">
+    <h2>Unknown</h2>
+    <ol></ol>
+  </div>
+
+
+  </body>
+</html>
