@@ -227,6 +227,17 @@ for (var key in messages) {
 }
 ```
 
+###### apply
+```javascript
+function sum(x, y, z){
+  return x + y + z;
+}
+
+var numbers = [1, 5, 10];
+
+sum.apply(null, numbers);
+16
+```
 
 ###### case/ switch
 
