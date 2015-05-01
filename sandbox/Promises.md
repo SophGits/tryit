@@ -3,7 +3,7 @@
 
 JavaScript is single-threded, meaning two bits of script cannot run at the same time; they have to run one after another.
 
-In browsers, JS shares a thread with other things, like painting, updating stylesm interacting with form controls. Activity in one of these things delays the others - JS has to get in the queue!
+In browsers, JS shares a thread with other things, like painting, updating styles and interacting with form controls. Activity in one of these things delays the others - JS has to get in the queue!
 
 One way people get around this is using events and callbacks:
 
