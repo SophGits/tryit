@@ -98,3 +98,16 @@ And it has to be after you declare the Car instance.
 
 >Source: Source Decoded channel on YouTube. Video title: "I Love *&@^#! JavaScript!"
 >>>>>>> sandbox
+
+
+### __proto__ and .hasOwnProperty()
+
+```javascript
+var hi = function(){ console.log("hi"); }
+
+hi.hasOwnProperty('bind')
+>false
+
+hi.__proto__.hasOwnProperty('bind')
+>true
+```
