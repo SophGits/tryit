@@ -397,3 +397,34 @@ Greenwich
 Woolwich
 
 ---
+
+###### Will always alert 3
+
+```javascript
+var a = {}
+for(var i=0; i<3; i++){
+  a[i] = function(){
+    alert(i)
+  };
+}
+a[0]();
+a[1]();
+a[2]();
+```
+###### Unless you add more closure:
+
+```javascript
+var a = {}
+for(var i=0; i<3; i++){
+
+  (function(j){
+    a[j] = function(){
+      alert(j)
+    };
+  })(i);
+
+}
+a[0]();
+a[1]();
+a[2]();
+```
