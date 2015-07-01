@@ -48,3 +48,21 @@ var boundGetX = getX.bind(module);
 boundGetX()
 >> 81  //  "this" refers to module
 ```
+##### Another bind example
+```javascript
+function list() {
+  return Array.prototype.slice.call(arguments);
+}
+
+var list1 = list(1, 2, 3);
+list1
+>> [1, 2, 3]
+
+var listStartingFoo = list.bind(undefined, "foo"); // I think this works because the context can be anything (and hence everything you use with it) and "foo" is always the initial argument
+listStartingFoo()
+>> ["foo"]
+
+var list3 = listStartingFoo(1, 2, 3)
+list3
+>> ["foo", 1, 2, 3]
+```
