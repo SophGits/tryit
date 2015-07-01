@@ -67,3 +67,22 @@ This is what promises do, but with better naming. Basically, they are a bit like
 * if a promise has succeeded or failed and you later add a success/failure callback, the correct callback will happen even though the event took place earlier.
 
 This is great for async success/failure, because you're more interested in reacting to the outcome than you are in the exact time something became available.
+
+##### An example
+```javascript
+var promise = new Promise(function(resolve, reject) {
+  var foo = "foo";
+  if( foo === "foo" ) { 
+    resolve("Worked"); 
+  }
+  else { 
+    reject( Error( "Broke" ) ); 
+  }
+});
+
+promise.then( function( result ){ 
+  console.log(result); // "Worked"
+}, function(err) { 
+  console.log(err); // "Broke" 
+});
+```
