@@ -66,3 +66,21 @@ var list3 = listStartingFoo(1, 2, 3)
 list3
 >> ["foo", 1, 2, 3]
 ```
+##### Bind with setTimeout
+```javascript
+function LateBloomer() {
+  this.petalCount = Math.ceil(Math.random() * 12) + 1;
+}
+
+LateBloomer.prototype.bloom = function() {
+  window.setTimeout(this.declare.bind(this), 2000); // 2s delay
+};
+
+LateBloomer.prototype.declare = function() {
+  console.log('I am a flower with ' + this.petalCount + ' petals.');
+};
+
+var flower = new LateBloomer;
+flower.bloom(); // calls declare() after 2s
+>> I am a flower with 2 petals.
+```
