@@ -86,3 +86,4 @@ promise.then( function( result ){
   console.log(err); // "Broke" 
 });
 ```
+[Example of a promisified AJAX](http://www.html5rocks.com/en/tutorials/es6/promises/) 
