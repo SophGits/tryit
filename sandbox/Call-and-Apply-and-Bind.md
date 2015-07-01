@@ -29,3 +29,22 @@ sayHi.apply(this, ['Jim']);
 sayHi.bind(this, 'Jam')();
 >> Hello, Jam
 ```
+##### Bind
+```javascript
+var x = 9
+
+var module = {
+  x: 81,
+  getX: function() { return this.x }
+}
+
+module.getX();
+>> 81
+var getX = module.getX;
+getX()
+>> 9  // "this" refers to the global object
+
+var boundGetX = getX.bind(module);
+boundGetX()
+>> 81  //  "this" refers to module
+```
