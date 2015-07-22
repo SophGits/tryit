@@ -479,6 +479,12 @@ function add( left ) {
 
 var add5 = add(5); // make a copy of the function, storing 5 as 'left' (left-hand side of addition)
 
+add5(1)
+> 6
+
 add5(2); // adds 2 (right) to the left 5
 > 7
+
+add5(6) // adds 6 to 5
+> 11
 ```
