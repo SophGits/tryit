@@ -468,3 +468,17 @@ function listItems(array){
 listItems(array);
 
 > NB: next do "Here’s how you stick another property on that object and loop over everything that has heft:"
+
+##### Higher-order functions
+```javascript
+function add( left ) {
+  return function( right ) {
+    return left + right;
+  }
+}
+
+var add5 = add(5); // make a copy of the function, storing 5 as 'left' (left-hand side of addition)
+
+add5(2); // adds 2 (right) to the left 5
+> 7
+```
