@@ -488,4 +488,5 @@ add5(2); // adds 2 (right) to the left 5
 add5(6) // adds 6 to 5
 > 11
 ```
-##### [Higher-order function example] (https://gist.github.com/SophGits/06d492ca62ec10e44713)
+###### [Higher-order function example (simple)] (https://gist.github.com/SophGits/42693da9e9ef84676a58)
+###### [Higher-order function example] (https://gist.github.com/SophGits/06d492ca62ec10e44713)
