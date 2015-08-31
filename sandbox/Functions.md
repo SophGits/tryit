@@ -468,3 +468,25 @@ function listItems(array){
 listItems(array);
 
 > NB: next do "Here’s how you stick another property on that object and loop over everything that has heft:"
+
+##### Higher-order functions
+```javascript
+function add( left ) {
+  return function( right ) {
+    return left + right;
+  }
+}
+
+var add5 = add(5); // make a copy of the function, storing 5 as 'left' (left-hand side of addition)
+
+add5(1)
+> 6
+
+add5(2); // adds 2 (right) to the left 5
+> 7
+
+add5(6) // adds 6 to 5
+> 11
+```
+###### [Higher-order function example (simple)] (https://gist.github.com/SophGits/42693da9e9ef84676a58)
+###### [Higher-order function example] (https://gist.github.com/SophGits/06d492ca62ec10e44713)
