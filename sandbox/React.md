@@ -38,3 +38,14 @@ Edge case: For reordering two (or more) sets of children (siblings) you can use 
 ##### Speed
 As JS is fast and the render() methods are quite simple, your application should be fast. What's most likely to slow it down is the DOM mutation (rather than to JS execution). You can speed things up by telling React to skip processing a subtree. Do this by overriding shouldComponentUpdate() to return false. But, y'know…not in a case where data has actually been changed.
 
+#### Component lifecycle
+
+| Type          | Component name  | Pre initial render  |  Notes            |
+| ------------- | --------------- |---------------------|-------------------|
+| Mounting      | componentWillMount       | Yes    | Set state before initial render.|
+| Mounting      | componentDidMount        | No     | Immediately after initial render. Now the component has a DOM node. The componentDidMount of the child components are invoked before parents.|
+| Updating      | componentWillReceiveProps| No     | Call setState() inside this method to update props just before the render. |
+| Updating      | shouldComponentUpdate | No    | This method is invoked before render, when new state / props recieved. An opportunity to return false when you know the new props & state will ont need to ause a component update. Render will be completely skipped until the next state change. Also, componentWillUpdate & componentDidUpdate won't be called. Using this method will speed up your app if performance is a bottleneck.    |
+| Updating     | componentWillUpdate | No | Invoked immediately before render / after new state/props are received. Cannot use this setState() here - if state needs updating in response to a prop change, use componentWillReceiveProps instead). |
+| Updating | componentDidUpdate | No | Invoked immediately after the component's updates are put in the DOM. Opportunity to do something with the DOM straight after an update. |
+| Unmounting | componentWillUnmount | - | Invoked immediately before a component is unmounted from the DOM. USe this method for cleanup - eg invalidate timers or clear any DOM elements that were created in componentDidMount. |
