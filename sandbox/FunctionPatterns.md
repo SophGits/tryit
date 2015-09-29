@@ -40,3 +40,20 @@ obj.losePawInFight = function() {
 }
 ```
 because `this` gets bound to a new value every time losePawInFight in invoked, it's better to refer to the closure variable, obj. Each time catlike is called, a new closure scope is created - which means obj will always relate to only one catlike object.
+
+##### Decorator fn Vs Class
+A Class builds the object it will augment, whereas a decorator function accepts the object (to augment) as an inout.
+
+Here is the `constructor function` for the Class of Cat:
+```javascript
+var Cat = function( pawCount ) {
+  var obj = { pawCount: pawCount }
+  obj.losePawInFight = function() {
+    obj.pawCount--
+    return obj;
+  }
+  return obj;
+};
+
+var prudence = Cat( 4 );
+```
