@@ -228,3 +228,54 @@ var persephone = Cat();
 persephone instanceof Cat;
 >> false // Cat.prototype won't be anywhere in persephone's prototype chain, since persephone is just an object created with an object literal, so it just delegates to Object.prototype
 ```
+
+##### And again
+```javascript
+// Superclass
+var Plant = function(height){
+  this.height = height;
+}
+
+Plant.prototype.grow = function() {
+  this.height++;
+};
+
+// Subclass
+var Cactus = function(height){
+  Plant.call(this, height);
+};
+```
+To set up the relationship between the Cactus (subclass) and the Plant (superclass) prototype, we could do:
+```javascript
+Cactus.prototype = Plant.prototype;
+```
+This would make it impossible to add methods to Cactus without having them also on Plant. We only want Cactus to inherit from Plant (not the other way round). (NB Doing this would mean the two are the same object in memory).
+####### Correct:
+```javascript
+Cactus.prototype = Object.create(Plant.prototype);
+```
+This is the correct method. It creates an instance of Plant, which delegates to Plant.prototype. However, the below two would not work:
+####### Wrong:
+```javascript
+Cactus.prototype = Object.create(Car);
+```
+You're creating an object that delegates to Car, rather than directly to Car.prototype. In this case the Car function is run in the process of creating the new Cactus.prototype object. It's undesirable behaviour.
+or
+####### Wrong:
+```javascript
+Cactus.prototype = new Plant();
+```
+This used to be an advised technique, but every time we make a Plant subclass (like Cactus or Tulip etc), we would be invoking Plant the function - which may even require some arguments to pass in (if none, they'd be `undefined`).
+
+So the "Correct" answer, using `Object.create` sets up a prototype delegation, just like `new`, but without running a constructor function in the process. It has no adverse side effects.
+
+However:
+```javascript
+  var cactus = new Cactus(3);
+  console.log(cactus.constructor); // would be Plant rather than Cactus
+```
+
+So, we need to put the constructor function we overwrote (it comes 'for free' with new .prototype objects but not when you do `Object.create`) back:
+```javascript
+  Cactus.prototype.constructor = Cactus;
+```
