@@ -214,3 +214,17 @@ dog1.offspring.push(puppy);
 dog2.offspring;
 > [Dog] // this is the puppy
 ```
+
+##### NB
+`Car.prototype.constructor` is `Car`. Basically you can get back to the constructor function (Car) from the prototype of any instance of Car by doing .constructor.
+
+
+##### Extra inheritance note
+```javascript
+var Cat = function() {
+  return { ears: 2 }
+};
+var persephone = Cat();
+persephone instanceof Cat;
+>> false // Cat.prototype won't be anywhere in persephone's prototype chain, since persephone is just an object created with an object literal, so it just delegates to Object.prototype
+```
