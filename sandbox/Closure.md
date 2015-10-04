@@ -428,3 +428,77 @@ a[0]();
 a[1]();
 a[2]();
 ```
+
+##### Almost identical example
+```javascript
+var nums = [1,2,3];
+for (var i = 0; i < nums.length; i++) {
+  // This variable keeps changing every time we iterate!
+  //  First value is 1, then 2, then finally 3.
+  var num = nums[i];
+
+  elem.addEventListener('click', function() {
+      // alert num's value at the moment of the click!
+      alert(num);
+
+      // Specifically, we're alerting the num variable
+      // that's defined outside of this inner function.
+      // Each of these inner functions are pointing to the
+      // same `num` variable... the one that changes on
+      // each iteration, and which equals 3 at the end of
+      // the for loop.  Whenever the anonymous function is
+      // called on the click event, the function will
+      //  reference the same `num` (which now equals 3).
+
+  });
+}
+```
+The above code is essentially this:
+```javascript
+var num = nums[i];
+elem.addEventListener('click', function() {
+  alert(num);
+});
+```
+To fix it, add an IIFE:
+```javascript
+  elem.addEventListener('click', (function(numCopy) {
+      return function() {
+          alert(numCopy)
+      };
+  })(num));
+```
+and pass `num` into the outer function. Inside that outer function, the value is known as `numCopy` - a copy of `num` in that instant. Now it doesn't matter that num changes later down the line, as the value of `num` in `numCopy` is stored inside the outer function.
+
+Finally, the outer function returns the inner function to the event listener. Because of the way JavaScript scope works, that inner function has access to `numCopy`. In the near future, `num` will increment, but that doesn't matter. The inner function has access to `numCopy`, which will never change.
+
+Now, when someone clicks, it'll execute the returned inner function, alerting `numCopy`.
+
+Here's an example to paste in the console of a browser:
+```
+// clear the screen for testing
+document.body.innerHTML = '';
+
+var nums = [1,2,3];
+
+// Let's loop over the numbers in our array
+for (var i = 0; i < nums.length; i++) {
+
+    // This is the number we're on...
+    var num = nums[i];
+
+    // We're creating a DOM element for the number
+    var elem = document.createElement('div');
+    elem.textContent = num;
+
+    // ... and when we click, alert the value of `num`
+    elem.addEventListener('click', (function(numCopy) {
+        return function() {
+            alert(numCopy);
+        };
+    })(num));
+
+    document.body.appendChild(elem);
+};
+```
+
