@@ -11,15 +11,15 @@ Functions have a:
 
 ##### Invocation
 Four patterns:
-- 1. Method invocation pattern
-- 2. Function invocation pattern
-- 3. Constructor invocation pattern
-- 4. Apply invocation pattern
+- 1. __Method__ invocation pattern
+- 2. __Function__ invocation pattern
+- 3. __Constructor__ invocation pattern
+- 4. __Apply__ invocation pattern
 They differ in how _this_ is initialised.
 
 ###### 1. The method invocation pattern
 ✝. When a function is stored as a property of an object, it's called a method.<br />
-✡. When a method is involved, _this_ is bound to that object<br />
+✡. When a method is involved, `this` is bound to that object<br />
 ☚. if the invocation expression contains `something.something` or `something["something"]` it is invoked as a method.
 
 ```javascript
@@ -35,7 +35,7 @@ myObject.increment(2); // 3
 
 
 ###### 2. The function invocation pattern
-When the function in _not_ the property of an object, it is invoked as a function✝.
+When the function is _not_ the property of an object, it is invoked as a function✝.
 
 ```javascript
 var add = function(a, b){
@@ -43,10 +43,10 @@ var add = function(a, b){
 };
 var sum = add✝(3,4); // 7
 ```
-_this_ is bound to the global object, which is annoying.
+`this` is bound to the global object, which is annoying.
 You'd want it to be bound to the outer function.
 
-Because of this, a method can't make use of an inner function because the inner function doesn't have access to the object (as its _this_ is bound to the wrong value).
+Because of this, a method can't make use of an inner function because the inner function doesn't have access to the object (as its `this` is bound to the wrong value).
 
 But, you can solve it by creating `var that = this;` in the outer function and passing it to the inner one.
 
@@ -80,7 +80,7 @@ If a constructor is called without using the `new` prefix, bad things will happe
 
 Use of this style of constructor functions is not recommended.
 
-> ✝ Capital letter for a constructor is very important. The onstructor is the one prefixed with `new`.
+> ✝ Capital letter for a constructor is very important. The constructor is the one prefixed with `new`.
 
 ###### 4. The Apply invocation pattern
 Functions can have methods (as you know)
@@ -138,6 +138,7 @@ The `throw` statement's object should, at least, have a name identifying the typ
 
 Here's a `try` block. If an exception is thrown within that, control does to the `catch` clause:
 
+```javascript
 var try_it = function(){
   try{
     add("seven");
@@ -147,7 +148,7 @@ var try_it = function(){
   }
 }
 try_it();
-
+```
 The `catch` clause will type out the error name and message you created in `throw`, above.
 
 `try` has one `catch` block for catching all exceptions. If you need to know the type of exception in order to do different things with it, then get your exception handler to inspect the `name` to determine the type of exception.
