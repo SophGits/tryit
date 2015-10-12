@@ -3,10 +3,10 @@
 Functions have a:
 - Function.prototype (which is itself linked to Object.prototype)
 - two hidden properties:
-..* its context
-..* the code that implements it
+- - its context
+- - the code that implements it
 - Prototype property (_not_ Function.prototype):
-..* A function's prototype property has the value of an object with a constructor property...whose value is a function.
+- - A function's prototype property has the value of an object with a constructor property...whose value is a function.
 
 
 ##### Invocation
