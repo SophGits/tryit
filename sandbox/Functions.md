@@ -11,10 +11,10 @@ Functions have a:
 
 ##### Invocation
 Four patterns:
-1. Method invocation pattern
-2. Function invocation pattern
-3. Constructor invocation pattern
-4. Apply invocation pattern
+*1. Method invocation pattern
+*2. Function invocation pattern
+*3. Constructor invocation pattern
+*4. Apply invocation pattern
 They differ in how _this_ is initialised.
 
 ###### 1. The method invocation pattern
