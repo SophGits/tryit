@@ -452,6 +452,7 @@ Using a closure the above internally keeps track of `count`.
 
 
 ##### Getting value from an object
+```javascript
 var array = {
   item1: {id: 2, weight: 10, colour: "blue"},
   item2: {id: 4, weight: 8, colour: "pink"},
@@ -466,7 +467,7 @@ function listItems(array){
   }
 }
 listItems(array);
-
+```
 > NB: next do "Here’s how you stick another property on that object and loop over everything that has heft:"
 
 ##### Higher-order functions
