@@ -181,7 +181,7 @@ function message(lang){
     var sayBye = function(){
       return console.log("I'm off, see you soon.");
     }
-  } else if(lang = "italian"){
+  } else if(lang === "italian"){
     var sayBye = function(){
       return console.log("Ciao bello.");
     }
