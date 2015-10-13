@@ -135,9 +135,11 @@ Return an object
 
 
 ###### Object.keys (and reduce)
->Task: transform the address (an array of 3 strings) into one string, inside an array.
+> Task: transform the address (an array of 3 strings) into one string, inside an array.
+
 ```javascript
-var person = {name: "Bob", age: "50", address: ['1 Main Street', 'London', 'EC1V 4PS']}
+  var person = {name: "Bob", age: "50", address: ['1 Main Street', 'London', 'EC1V 4PS']}
+
 
    Object.keys(person).reduce(function(ret, key, i){
       if(key === "address") {
