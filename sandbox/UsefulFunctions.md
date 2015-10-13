@@ -3,13 +3,13 @@
 > filter
 > map
 > for each
-> // return []
+> // return `[]`
 
 > reduce
 
 > every
 > some
-> // return true / false
+> // return `true` / `false`
 
 > indexOf()
 > Object.keys
@@ -19,7 +19,8 @@
 > exit early
 
 `filter`, `for each` and `map` output arrays.
-`reduce` takes {} or [] and outputs {}, [], a number or a string.
+
+`reduce` takes `{}` or `[]` and outputs `{}`, `[]`, a number or a string.
 
 ##### Some and Every
 Returns true or false
@@ -47,7 +48,8 @@ var tripled = [1, 2, 3].map(function(val, i){
 ###### filter
 Returns an array.
 
-Input is object:
+When the input is an object:
+(use Object.keys(object) to essentially turn it into an array)
 ```javascript
 var animals = {
   kitten: "small",
@@ -60,7 +62,7 @@ Object.keys(animals).filter(function(key, val){
 });
 // ["liger"]
 ```
-Input is array:
+When the input is an array:
 ```javascript
 var numbers = [1, 2, 3, 4];
 
