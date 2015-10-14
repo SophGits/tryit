@@ -59,6 +59,19 @@ window.onload = function () {
   map.call("Hello, world", function(x) { return x.charCodeAt(0) });
   // [72, 101, 108, 108, 111, 44, 32, 119, 111, 114, 108, 100]
 
+// for in
+  // 1.1
+  var cats = {"Alan":1, "Sierra":2, "Clive":3};
+  function Feline() { this.paws = 4; }
+  var basket = new Feline();
+  for (var prop in basket) {
+  if( basket.hasOwnProperty( prop ) ) {
+      console.log("basket." + prop + " = " + basket[prop]);
+    }
+  }
+  // basket
+  // > Feline {paws: 4}
+
 // filter
 
 // some
