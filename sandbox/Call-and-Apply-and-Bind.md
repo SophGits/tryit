@@ -84,3 +84,35 @@ var flower = new LateBloomer;
 flower.bloom(); // calls declare() after 2s
 >> I am a flower with 2 petals.
 ```
+
+##### Apply without 'apply'
+Use the spread operator
+
+```javascript
+function add(a,b,c) {
+  return a + b + c;
+}
+
+var args = [0,1,2];
+
+add.apply(null, args); // apply method
+> 3
+
+add(...args) // spread operator method
+> 3
+```
+
+```javascript
+var arr1 = [0, 1, 2];
+var arr2 = [3, 4, 5];
+
+// With apply
+Array.prototype.push.apply(arr1, arr2)
+> 6 // arr1 = [0, 1, 2, 3, 4, 5]
+
+var arr3 = ['a', 'b'];
+
+// with spread
+arr1.push(...arr3)
+> 8 // arr1 = [0, 1, 2, 3, 4, 5, "a", "b"]
+```
